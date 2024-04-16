@@ -1,0 +1,98 @@
+<!DOCTYPE html >
+<html>
+<head>
+
+	<meta charset="utf-8" >
+	<title>Array</title>
+
+</head>
+
+<body>
+
+	<p id="result"></p>
+	<p id="primoElemento"></p>
+	<p id="secondoElemento"></p>
+	<p id="indice"></p>
+
+<script>
+
+	const listaSpesa = ['mele', 'patate', 'burro', 'latte'];
+	console.log(listaSpesa);
+	let lunghezzaArray = listaSpesa.length;
+	console.log(lunghezzaArray);
+
+	document.getElementById("result").textContent = `${listaSpesa}`;
+	document.getElementById("primoElemento").textContent = `${listaSpesa[0]}`;
+	document.getElementById("secondoElemento").textContent = `${listaSpesa[1]}`;
+
+	listaSpesa[0] = 'formaggio';
+	console.log(listaSpesa[0]);
+
+	console.log(listaSpesa.indexOf('latte'))
+	document.getElementById("indice").textContent = `${listaSpesa.indexOf('burro')}`;
+
+	console.log(listaSpesa.indexOf('noci'));
+
+	listaSpesa.push('noci'); // aggiunge elemento alla fine
+	document.getElementById("result").textContent = `${listaSpesa}`;
+
+	listaSpesa.unshift('fragole'); // aggiunge elemento all'inizio
+	document.getElementById("result").textContent = `${listaSpesa}`;
+
+	listaSpesa.pop(); // rimuove l'ultimo elemento 
+	document.getElementById("result").textContent = `${listaSpesa}`;
+
+	listaSpesa.shift(); // rimuove il primo elemento
+	document.getElementById("result").textContent = `${listaSpesa}`;
+
+	const index = listaSpesa.indexOf('burro');
+
+	if (index !== -1){ //se è presente (!==)
+
+		listaSpesa.splice(index, 1);	
+
+	}
+
+	for (const item of listaSpesa){
+
+		console.log(item);
+
+	}
+
+	const numbers = [5, 2, 7, 6];
+
+	function double(number){
+
+		return number * 2;
+
+	}
+
+	const doubled = numbers.map(double);
+	console.log(doubled);
+
+	const cities = ['Londra', 'Strasburgo', 'NY', 'Roma', 'Lussemburgo'];
+
+	function isLong(city){
+
+		return city.length > 8;
+		
+	}
+	
+	const longer = cities.filter(isLong);
+	console.log(longer);
+
+	const data = 'Londra, Strasburgo, NY, Roma, Lussemburgo, Rimini';
+	const nuovoArray = data.split(',');
+	console.log(nuovoArray);
+	console.log(nuovoArray[0]);
+	console.log(nuovoArray[3]);
+	console.log(nuovoArray.length - 1);
+
+	const commaSeparated = nuovoArray.join(',');
+	console.log(commaSeparated);
+	console.log(typeof(commaSeparated));
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>interruttore</title>
+</head>
+<body>
+	<button>Start Machine</button>
+	<p>La macchina è spenta</p>
+	<script type="text/javascript">
+		const btn = document.querySelector("button");
+		const txt = document.querySelector("p");
+		function updateBtn() {
+			if(btn.textContent === "Start Machine"){
+				txt.textContent = "La macchina è accesa";
+				btn.textContent = "Stop Machine"
+			}else{
+				txt.textContent = "La macchina è spenta";
+				btn.textContent = "Start Machine"
+			}
+		}
+		btn.onclick = updateBtn
+
+		
+	</script>
+</body>
+</html

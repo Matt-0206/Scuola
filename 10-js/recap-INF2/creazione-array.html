@@ -1,0 +1,42 @@
+<!DOCTYPE html >
+<html>
+<head>
+
+	<meta charset="utf-8" >
+	<title>Creazione Array</title>
+
+</head>
+
+<body>
+
+<script>
+
+const arr = Array();
+console.log(arr);
+
+const ottoValori = Array(8).fill('x');
+console.log(ottoValori);
+
+const quattroValori = Array(4).fill('4');
+console.log(quattroValori);
+
+const firstList = [1,2,3];
+const secondList = [4,5,6];
+const thirdList = firstList.concat(secondList);
+console.log(thirdList);
+
+const frutta = ['mele', 'banane', 'kiwi'];
+const verdura = ['lattuga', 'cetrioli', 'spinaci'];
+const vegetariano = frutta.concat(verdura);
+
+vegetariano.push('fragole');
+vegetariano.unshift('noci');
+
+console.log(vegetariano);
+console.log(vegetariano.length);
+console.log(vegetariano.includes('cavolo'))
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Arrays: Task 3</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+
+
+
+    <script>
+
+
+/*
+
+
+Ti forniamo un array di partenza e lavorerai in qualche modo nella direzione opposta.
+
+1 rimuovi l'ultimo elemento nell'array.
+
+2 Aggiungi due nuovi nomi alla fine dell'array.
+
+3 Passa su ogni elemento nell'array e aggiungi il suo numero di indice dopo il nome tra parentesi, ad esempio Ryu (0). 
+
+4 Infine, unisci gli elementi dell'array in un'unica stringa chiamata myString, con un separatore di " -".
+
+
+
+*/
+
+
+
+let myArray = [ "Ryu", "Ken", "Chun-Li", "Cammy", "Guile", "Sakura", "Sagat", "Juri" ];
+myArray.pop()
+myArray.push('Kazuya','Yoshimitsu')
+
+function addIndexToName(item,index){
+
+  return item + `(${index})`
+
+}
+
+myArray=myArray.map(addIndexToName)
+const myString=myArray.join('-')
+
+console.log(myArray)
+console.log(myString)
+
+// Add your code here
+
+// Don't edit the code below here!
+
+const section=document.querySelector('section')
+section.innerHTML = ' ';
+
+let para1 = document.createElement('p');
+para1.textContent = myString;
+
+section.appendChild(para1);
+    
+
+
+
+
+  </script>
+
+  
+
+  </body>
+  
+
+</html>

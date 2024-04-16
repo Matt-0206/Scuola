@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>greetings</title>
+
+     
+
+  </head>
+
+
+
+  <body>
+
+    
+<div class="output" style="min-height: 125px;">
+
+  <ul>  </ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+/*
+
+Abbiamo una serie di messaggi di biglietti di auguri, ma vogliamo ordinarli per elencare solo i messaggi di Natale. Vogliamo che tu compili un test condizionale if () per testare ogni stringa e stampare il risultato  nell'elenco solo se si tratta di un messaggio di Natale.
+
+
+
+*/
+
+
+    const list = document.querySelector('.output ul');
+list.innerHTML = '';
+const greetings = ['Happy Birthday!',
+                 'Merry Christmas my love',
+                 'A happy Christmas to all the family',
+                 'You\'re all I want for Christmas',
+                 'Get well soon'];
+
+
+
+
+
+for (const greeting of greetings) {
+  
+// il tuo test condizionale va all'interno delle parentesi dell'  if()
+      if(greetings.includes('Christmas'){
+      const listItem = document.createElement('li');
+      listItem.textContent = greeting;
+      list.appendChild(listItem);
+
+  }
+}
+      
+
+</script>	
+
+
+
+
+
+  </body>
+
+
+
+
+
+</html>

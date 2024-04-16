@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Calcola Sconto</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+        <form onsubmit="return calculateDiscount()">
+
+            <label for="price">Prezzo:</label>
+            <input type="number" name="price" id="price" placeholder="Inserisci il Prezzo">
+            <br>
+            <label for="discount">Sconto Percentuale:</label>
+            <input type="number" name="discount" id="discount" placeholder="Inserisci lo Sconto %">
+            <br>
+            <button type="submit">Calcola</button>
+
+        </form>
+
+        <p id="result"></p>
+
+        <script>
+
+            function calculateDiscount(){
+
+                const price = document.getElementById('price').value;
+                const discount = document.getElementById('discount').value;
+                const discountedPrice = price * ( 1 - discount/100);
+                const resultElement = document.getElementById('result');
+                resultElement.innerHTML = `Prezzo scontato: ${discountedPrice.toFixed(2)}€`
+
+                return false;
+            }
+
+        </script>
+
+  </body>
+
+</html>

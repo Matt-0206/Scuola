@@ -1,0 +1,63 @@
+	<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Una pagina web </title>
+
+<script src="https://unpkg.com/mathjs@12.4.1/lib/browser/math.js"></script>
+
+</head>
+
+<body>
+
+		 
+
+<div id="demo"></div>
+
+
+
+
+
+
+
+
+
+<script>
+	
+const mA = math.matrix([
+
+	[1, 2, 3]
+
+]);
+
+const mB = math.matrix([	
+
+
+	[1, 2, 3],
+	[1, 2, 3],
+	[1, 2, 3]
+
+
+])
+
+
+
+const matrixMult = math.multiply(mA, mB);
+
+console.log(matrixMult);
+
+document.getElementById('demo').innerHTML = matrixMult;
+
+
+</script>
+
+
+
+
+
+</body>
+
+
+
+
+</html>

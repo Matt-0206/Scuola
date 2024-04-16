@@ -1,0 +1,88 @@
+s<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>capitalization</title>
+
+     
+
+  </head>
+
+
+
+  <body>
+
+    
+<div class="output" style="min-height: 125px;">
+
+  <ul>  </ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+
+/*
+In questo esercizio abbiamo i nomi delle città del Regno Unito, ma le lettere maiuscole sono tutte incasinate. Vogliamo che tu li modifichi in modo che siano tutti minuscoli, ad eccezione della prima lettera maiuscola. Un buon modo per farlo è:
+
+1 - Converti l'intera stringa contenuta nella city variabile in minuscolo e memorizzala in una nuova variabile.
+2 - Prendi la prima lettera della stringa in questa nuova variabile e memorizzala in un'altra variabile.
+3 - Utilizzando quest'ultima variabile come sottostringa, sostituire la prima lettera della stringa minuscola con la prima lettera della stringa minuscola modificata in maiuscolo. Memorizza il risultato di questa procedura di sostituzione in un'altra nuova variabile.
+4 - Cambia il valore della resultvariabile in modo che sia uguale al risultato finale, non al file city.
+
+
+*/	
+
+const list = document.querySelector('.output ul');
+list.innerHTML = '';
+const cities = ['lonDon', 'ManCHESTer', 'BiRmiNGHAM', 'liVERpoOL'];
+
+for (const city of cities) {
+  // scrivi il tuo codice qui sotto
+
+  const cityLowerCase= city.toLowerCase();
+
+  const firstLetter= cityLowerCase.slice(0,1);
+
+  let capitalized= firstLetter.toUpperCase();
+
+  const result= cityLowerCase.replace(firstLetter,capitalized);
+
+  console.log(result)
+    
+  const listItem = document.createElement('li');
+  listItem.textContent = result;
+  list.appendChild(listItem);
+
+}
+
+
+
+</script>	
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>

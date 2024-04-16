@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Es 5</title>
+    
+</head>
+
+<body>
+
+    <script>
+
+        const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+        const arrlength = ages.length;
+
+        const min = Math.min(...ages);
+
+        const max = Math.max(...ages);
+
+        console.log("L'età minima è: ",min);
+        
+        console.log("L'età massima è: ", max);
+
+        //ciclo
+
+        for(let age in ages){
+
+            let media = (19 + 22 + 19 + 24 + 20 + 25 + 26 + 24 + 25 + 24) / arrlength;
+
+            console.log("L'età media è (ciclo): ",media);
+
+        }
+
+        //funzione
+
+        function media(){
+
+        let media = (19+22+19+24+20+25+26+24+25+24) / arrlength;
+
+        return media;
+
+        }
+
+        console.log("L'età media è (funzione): ",media());
+
+    </script>
+
+</body>
+
+</html>

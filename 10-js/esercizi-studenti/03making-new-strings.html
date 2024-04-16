@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Making new strings</title>
+
+     
+
+  </head>
+
+
+
+  <body>
+
+    
+<div class="output" style="min-height: 125px;">
+
+
+
+  <ul>  </ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+ /*
+
+ In quest'ultimo esercizio, l'array contiene una serie di stringhe contenenti informazioni sulle stazioni ferroviarie nel nord dell'Inghilterra. Le stringhe sono elementi di dati che contengono il codice della stazione di tre lettere, seguito da alcuni dati leggibili dalla macchina, seguiti da un punto e virgola, seguito dal nome della stazione leggibile dall'uomo. 
+
+1 - Estrai il codice stazione di tre lettere e memorizzalo in una nuova variabile.
+2 - Trova il numero di indice del carattere del punto e virgola.
+3 - Estrai il nome della stazione leggibile utilizzando il numero di indice del carattere punto e virgola come punto di riferimento e memorizzalo in una nuova variabile.
+4 - Concatena le due nuove variabili in una stringa letterale per creare la stringa finale.
+5 - Cambia il valore della variabile result nella stringa finale
+ 
+
+ */ 
+
+const list = document.querySelector('.output ul');
+list.innerHTML = '';
+const stations = ['MAN675847583748sjt567654;Manchester Piccadilly',
+                  'GNF576746573fhdg4737dh4;Greenfield',
+                  'LIV5hg65hd737456236dch46dg4;Liverpool Lime Street',
+                  'SYB4f65hf75f736463;Stalybridge',
+                  'HUD5767ghtyfyr4536dh45dg45dg3;Huddersfield'];
+
+for (const station of stations) {
+  // scrivi il tuo codice qui sotto
+
+  const stationCode= station.slice(0,3);
+
+  const semiColon= station.indexOf(';');
+
+  const stationName= station.slice(semiColon+1);
+
+  const stringaFinale=`${stationCode}; ${stationName}`;
+
+  const result= stringaFinale;
+
+  const listItem = document.createElement('li');
+  listItem.textContent = result;
+  list.appendChild(listItem);
+}
+
+
+
+
+</script>	
+
+
+
+
+
+  </body>
+
+
+
+
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Arrays</title>
+   
+  </head>
+
+  <body>
+
+    
+
+
+
+
+
+<div class="output" style="min-height: 125px;">
+
+  <ul>  </ul>
+
+
+  <p></p>
+
+
+
+
+</div>
+
+
+
+
+
+<script>
+
+ 
+
+  /*
+
+    Stampare i nomi dei prodotti e i prezzi su una fattura, quindi sommare i prezzi e stamparli in fondo. Nell'esempio modificabile di seguito sono presenti commenti contenenti numeri: ognuno di questi contrassegna un punto in cui è necessario aggiungere qualcosa al codice. Sono i seguenti:
+
+1 Sotto il commento // number 1 ci sono una serie di stringhe, ciascuna contenente un nome di prodotto e un prezzo separati da due punti. Vorremmo che tu lo trasformassi in un array e lo memorizzassi in un array chiamato products.
+
+
+2 Sotto il commento // number 2, avvia un for...of() loop per esaminare tutti gli elementi dell'array products.
+
+3 Sotto il commento // number 3 vogliamo che tu scriva una riga di codice che divide l'attuale elemento dell'array ( name:price) in due elementi separati, uno contenente solo il nome e uno contenente solo il prezzo. 
+
+Come parte della precedente riga di codice, vorrai anche convertire il prezzo da una stringa a un numero. 
+
+4 C'è una variabile chiamata total che viene creata e ha un valore di 0 nella parte superiore del codice. All'interno del ciclo (sotto // number 4) vogliamo che tu inserisca una riga che aggiunga il prezzo corrente dell'articolo a quel totale in ogni iterazione del ciclo, in modo che alla fine del codice il totale corretto venga stampato sulla fattura. Potrebbe essere necessario un operatore di assegnazione per eseguire questa operazione.
+
+5 Vogliamo che tu modifichi la riga appena sotto // number 5 in modo che la variabile itemText  sia uguale a "nome articolo corrente — $ prezzo articolo corrente", ad esempio "Scarpe — $ 23,99" in ogni caso, in modo che le informazioni corrette per ogni articolo siano stampate sul fattura. Questa è solo una semplice concatenazione di stringhe, che dovrebbe esserti familiare.
+
+
+Infine, sotto il commento // number 6, dovrai aggiungere una } per contrassegnare la fine del for...of() loop.
+
+
+  */
+
+const list = document.querySelector('.output ul');
+const totalBox = document.querySelector('.output p');
+let total = 0;
+list.innerHTML = '';
+totalBox.textContent = '';
+
+
+// number 1
+                // 'Underpants:6.99'
+                // 'Socks:5.99'
+                // 'T-shirt:14.99'
+                // 'Trousers:31.99'
+                // 'Shoes:23.99';
+
+let products=["Underpants:6.99","Socks:5.99","T-shirt:14.99","Trousers:31.99","Shoes:23.99"]
+
+// number 2
+
+for (const product of products){
+
+  const subArray = product.split(":");
+  console.log(subArray)
+  const name = subArray[0];
+  console.log(subArray)
+  const price = Number(subArray[1]);
+  total = total + price;
+
+  console.log(total)
+
+  const itemText = `${name} - $${price}`
+
+
+
+// number 3
+
+// number 4
+
+// number 5
+
+
+  // let itemText = 0;
+
+  const listItem = document.createElement('li');
+  listItem.textContent = itemText;
+  list.appendChild(listItem);
+
+}
+
+// number 6
+
+totalBox.textContent = 'Total: $' + total.toFixed(2);
+
+
+
+</script>
+
+
+  </body>
+  
+
+</html>

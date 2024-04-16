@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Arrays: Task 4</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+
+
+
+
+    <script>
+
+/*
+
+
+Per questa attività dell'array, ti forniamo un array iniziale che elenca i nomi di alcuni uccelli.
+
+1 Trova l'indice dell'elemento "Eagles" e usalo per rimuovere l'elemento.
+
+2 Crea un nuovo array da questo, chiamato eBirds, che contenga solo uccelli dall'array originale i cui nomi iniziano con la lettera "E". Nota che startsWith()è un ottimo modo per verificare se una stringa inizia con un dato carattere.
+
+3 Se funziona, dovresti vedere "Emus, Egrets" apparire nella pagina.
+
+
+
+*/  
+
+
+
+const birds = [ "Parrots", "Falcons", "Eagles", "Emus", "Caracaras", "Egrets" ];
+
+// Add your code here
+
+let index= birds.indexOf( 'Eagles')
+birds.splice(index,1)
+
+function tramoggia (bird){
+
+  return bird.startsWith('E')
+
+}
+
+var eBirds= birds.filter(tramoggia)
+
+console.log(birds)
+console.log(eBirds)
+
+// Don't edit the code below here!
+
+const section=document.querySelector('section')
+section.innerHTML = ' ';
+
+const para1 = document.createElement('p');
+para1.textContent = eBirds;
+
+section.appendChild(para1);
+
+
+
+
+  </script>
+
+  </body>
+  
+
+</html>

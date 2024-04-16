@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Strings: Task 1</title>
+    <style>
+      p {
+        color: magenta;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+
+     <script>
+
+/*
+
+Hai già metà di una citazione famosa all'interno di una variabile chiamata quoteStart; vorremmo che tu:
+
+Cerchi l'altra metà della citazione e aggiungila all'esempio all'interno di una variabile chiamata quoteEnd.
+
+Concatena le due stringhe insieme per creare un'unica stringa contenente la citazione completa. Salva il risultato all'interno di una variabile chiamata finalQuote.
+
+Scoprirai di ricevere un errore a questo punto. Puoi risolvere il problema con quoteStart, in modo che il testo completo venga visualizzato correttamente?
+
+
+*/
+
+
+
+    // Add your code here
+
+    const quoteStart = 'Don\'t judge each day by the harvest you reap';
+    const quoteEnd='but by the seed you plant'; 
+    const finalQuote=`${quoteStart} ${quoteEnd}`;
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    const para1 = document.createElement('p');
+    para1.textContent = finalQuote;
+
+    section.appendChild(para1);
+  </script>
+
+  </body>
+ 
+
+</html>

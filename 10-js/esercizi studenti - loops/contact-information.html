@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>loops</title>
+
+    
+  </head>
+
+<body>
+
+<label for="search">Search by contact name: </label>
+<input id="search" type="text" />
+<button>Search</button>
+
+<p></p>
+
+
+</body>
+
+
+
+<script>
+  
+/*
+
+Supponiamo di voler cercare tra una serie di contatti e numeri di telefono e restituire solo il numero che volevamo trovare? 
+Innanzitutto, un semplice codice HTML: un testo <input>che ci consente di inserire un nome da cercare, 
+un <button>elemento per inviare una ricerca e un <p>elemento per visualizzare i risultati.
+
+*/
+
+
+
+
+
+  // array of contacts
+
+const contacts = [
+  "Chris:2232322",
+  "Sarah:3453456",
+  "Bill:7654322",
+  "Mary:9998769",
+  "Dianne:9384975",
+];
+
+
+const para = document.querySelector("p");
+const input = document.querySelector("input");
+const btn = document.querySelector("button");
+
+
+btn.addEventListener('click', () => {
+
+
+// inseriamo il valore dell'input in una variabile 
+
+const searchName = input.value.toLowerCase();
+
+// svuotiamo il contenuto di input per la prossima ricerca
+// e gli diamo focus
+
+input.value = '';
+input.focus();
+para.textContent = '';
+
+
+// inserire qui loop for
+
+
+
+
+if(para.textContent === ''){
+
+  para.textContent = 'Contact not found';
+
+
+
+
+}
+
+
+
+
+
+
+
+
+}); // chiusura dell' addEventListener
+
+
+
+
+
+
+  
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</html>

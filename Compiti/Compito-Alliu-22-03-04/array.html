@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <title>Array</title>
+    </head>
+
+<body>
+
+
+<script>
+
+    const data = 'Honda-Kawasaki-Ducati-Aprilia-Lambretta';
+
+    const moto = data.split("-");
+
+    console.log(moto);
+
+    console.log(moto.length);
+
+    const primoElemento = moto[0];
+
+    console.log(primoElemento);
+
+    const ultimoElemento = moto[4];
+
+    console.log(ultimoElemento);
+
+    moto.push('KTM');
+
+    console.log(moto);
+
+    moto.unshift('BMW');
+
+    console.log(moto);
+
+    //------------------------------------------------------------------------------- 
+
+    let names = ['Katia', 'John', 'Alex', 'Theo', 'Ginevra', 'Leo'];
+
+    console.log(names);
+
+    const index = names.indexOf('Theo');
+
+    console.log(index);
+
+    names.splice(3, 1);
+
+    console.log(names);
+    
+</script>
+
+</body>
+</html>

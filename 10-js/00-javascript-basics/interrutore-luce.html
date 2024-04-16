@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>interruttore</title>
+</head>
+<body>
+	<button>Accendi la luce</button>
+	<p></p>
+	<script type="text/javascript">
+		const btn = document.querySelector("button");
+		const txt = document.querySelector("p");
+		document.querySelector('html').style.backgroundColor='black';
+		function updateBtn() {
+			if(btn.textContent === "Accendi la luce"){
+				txt.textContent = "La luce è accesa";
+				btn.textContent = "Spegni la luce";
+				document.querySelector('html').style.backgroundColor='yellow';
+				document.querySelector('html').style.color='black';
+			}else{
+				txt.textContent = "La luce è spenta";
+				btn.textContent = "Accendi la luce";
+				document.querySelector('html').style.backgroundColor='black';
+				document.querySelector('html').style.color='white';
+			}
+		}
+		btn.onclick = updateBtn
+
+		
+	</script>
+</body>
+</html>

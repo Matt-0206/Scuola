@@ -1,0 +1,53 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset="utf-8" >
+   <title>Count Splitter</title>
+
+<style>
+
+    .textinput{
+
+        width: 300px;
+
+    } 
+    
+</style>
+
+</head>
+
+<body>
+
+<form onsubmit="return countSplitter()">
+
+    <label for="price">Prezzo:</label>
+    <input type="number" name="price" id="price" placeholder="Inserisci il Prezzo" class="textinput">
+    <br>
+    <label for="people">Persone:</label>
+    <input type="number" name="people" id="people" placeholder="Inserisci il numero di persone" class="textinput">
+    <br>
+    <button type="submit">Calcola</button>
+ 
+</form>
+
+<p id="result"></p>
+
+    <script>
+
+        function countSplitter(){
+
+            const price = document.getElementById('price').value;
+            const people = document.getElementById('people').value;
+            const payment = price / people;
+            const resultElement = document.getElementById('result');
+            resultElement.innerHTML = `Ogni persona paga: ${payment.toFixed(2)}€`
+
+            return false;
+        }
+
+    </script>
+
+</body>
+
+
+</html>

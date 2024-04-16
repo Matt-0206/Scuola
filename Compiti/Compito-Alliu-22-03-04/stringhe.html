@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <title>Stringhe</title>
+    </head>
+
+<body>
+
+
+<script>
+
+    const citazione = "Un matematico è una persona che dice una cosa, ne scrive un'altra alla lavagna, intende qualcos'altro completamente diverso e nessuna delle tre cose è corretta.";
+
+    console.log(citazione);
+
+    console.log(citazione.length);
+    
+    console.log(citazione.toLowerCase());
+
+    console.log(citazione.indexOf("lavagna"));
+
+    const stringaEstratta = citazione.slice(3 , 13);
+
+    console.log(stringaEstratta);
+
+    const updated = citazione.replace(", intende qualcos'altro completamente diverso e nessuna delle tre cose è corretta.", " e nel frattempo mangia un panino con la porchetta");
+
+    console.log(updated);
+
+    console.log(updated.length - 1);
+
+    console.log(updated[127]);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Calcola Sconto</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+  html{
+
+    box-sizing: border-box;
+
+  }
+
+  body{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    margin: 2em 20%;
+    line-height: 1;
+    
+  }
+
+  ul{
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  ul li{
+
+    margin-bottom: 1em;
+
+  }
+
+  li{
+  
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  label{
+
+    flex: 0 0 8em;
+    margin-right: 1em;
+    margin-bottom: 4px;
+    color: #04699d;
+
+  }
+
+  form{
+
+    max-width: 100%;
+    border: 1px solid #666;
+    border-radius: 10px;
+    background-color: #f2f5d5;
+    padding: 1em;
+    
+  }
+
+  input, textarea, fieldset{
+
+    flex: 1 1 20em;
+
+  }
+
+  .textinput{
+
+    height: 2em;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding-left: 6px;
+    font-size: .875em;
+
+  }
+
+  input[type="submit"]{
+
+    width: 10em;
+    height: 2em;
+    background: white;
+    border: 1px solid #04699d;
+    border-radius: 4px;
+    flex: 0 1 8em;
+    margin: 0 auto;
+
+  }
+
+  fieldset{
+
+    padding: 0;
+    border: none;
+
+  }
+
+  legend{
+
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+
+  }
+
+</style>
+
+  </head>
+
+  <body>
+
+        <form onsubmit="return calculateDiscount()">
+
+          <fieldset>
+
+            <legend>Calcola lo Sconto</legend>
+
+            <ul>
+
+              <li><label for="price">Prezzo:</label>
+              <input type="number" name="price" id="price" placeholder="Inserisci il Prezzo" class="textinput"></li>
+
+              <li><label for="discount">Sconto Percentuale:</label>
+              <input type="number" name="discount" id="discount" placeholder="Inserisci lo Sconto %" class="textinput"></li>
+              
+              <li><input type="submit" value="Calcola"></li>
+
+            </ul>
+
+          </fieldset>
+
+        </form>
+
+        <p id="result"></p>
+
+        <script>
+
+            function calculateDiscount(){
+
+                const price = document.getElementById('price').value;
+                const discount = document.getElementById('discount').value;
+                const discountedPrice = price * ( 1 - discount/100);
+                const resultElement = document.getElementById('result');
+                resultElement.innerHTML = `Prezzo scontato: ${discountedPrice.toFixed(2)}€`
+
+                return false;
+            }
+
+        </script>
+
+  </body>
+
+</html>

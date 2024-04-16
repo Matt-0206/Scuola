@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Simple else if example</title>
+  </head>
+
+
+
+  <body>
+
+
+    <label for="weather">Select the weather type today: </label>
+
+
+    <select id="weather">
+      <option value="">--Make a choice--</option>
+      <option value="sunny">Sunny</option>
+      <option value="rainy">Rainy</option>
+      <option value="snowing">Snowing</option>
+      <option value="gallinoso">Gallinoso</option>
+    </select>
+
+    <p></p>
+
+
+
+
+
+    <script>
+      const select = document.querySelector('select');
+      const para = document.querySelector('p');
+
+      select.onchange = setWeather;
+
+
+
+      function setWeather() {
+
+        // facciamo prima un riferimento alla scelta fatta dall'utente
+        const choice = select.value;
+
+        // inserire codice if
+        if(choice === "sunny"){
+          para.textContent = "Oggi sarà una bella giornata."
+
+        }else if(choice === ""){
+          para.textContent = ""
+
+        }else if(choice === "rainy"){
+          para.textContent = "Oggi non sarà una bella giornata."
+
+        }else if(choice === "snowing"){
+          para.textContent = "Oggi sarà una bella giornata. ma con neve"
+        }else if(choice === "gallinoso"){
+          para.textContent = "pioveranno galline"
+
+        }
+      }
+    </script>
+
+
+
+  </body>
+</html>

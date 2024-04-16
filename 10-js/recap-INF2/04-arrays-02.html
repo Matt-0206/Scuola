@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Arrays: Task 1</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+
+
+  <body>
+
+    <section>
+
+
+
+    </section>
+
+
+    <script>
+
+    /*
+    
+   Qui ti viene fornita una stringa con cui lavorare. Vorremmo che tu:
+
+1- Convertissi la stringa in un array, rimuovendo i caratteri '+' nel processo. Salva il risultato in una variabile chiamata myArray.
+
+2- Memorizzassi la lunghezza dell'array in una variabile chiamata arrayLength.
+
+3- Memorizza l'ultimo elemento dell'array in una variabile chiamata lastItem.
+
+
+    */
+
+
+
+
+    
+
+// Add your code here
+
+let myString = 'Ryu+Ken+Chun-Li+Cammy+Guile+Sakura+Sagat+Juri';
+
+const myArray = myString.split('+');
+myArray.join(',');
+console.log(myArray);
+
+const arrayLength = myArray.length;
+console.log(arrayLength);
+
+const lastItem = 
+
+// Don't edit the code below here!
+
+section.innerHTML = ' ';
+let para1 = document.createElement('p');
+para1.textContent = `Array: ${ myArray }`;
+
+let para2 = document.createElement('p');
+para2.textContent = `The length of the array is ${ arrayLength }.`;
+
+let para3 = document.createElement('p');
+para3.textContent = `The last item in the array is "${ lastItem }".`;
+
+section.appendChild(para1);
+section.appendChild(para2);
+section.appendChild(para3);
+
+
+  </script>
+
+  </body>
+
+
+
+  
+
+</html>

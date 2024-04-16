@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Calendar</title>
+
+
+    <style>
+            html {
+  font-family: sans-serif;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+.a11y-label {
+  margin: 0;
+  text-align: right;
+  font-size: 0.7rem;
+  width: 98%;
+}
+
+body {
+  margin: 10px;
+  background: #f5f9fa;
+}
+
+  </style>
+
+
+  </head>
+
+
+  <body>
+
+<div class="output" style="height: 300px;">
+  <label for="theme">Select theme: </label>
+  <select id="theme">
+    <option value="white">White</option>
+    <option value="black">Black</option>
+    <option value="purple">Purple</option>
+    <option value="yellow">Yellow</option>
+    <option value="psychedelic">Psychedelic</option>
+  </select>
+
+  <h1>This is my website</h1>
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+  
+/*
+
+ Obiettivo: creare un'istruzione switch per permetterci di applicare più scelte al semplice sito web. 
+ Guarda <select>- questa volta vedrai che non ha due opzioni di tema, ma cinque. 
+ Devi aggiungere un'istruzione switch appena sotto il commento // ADD SWITCH STATEMENT:
+
+Dovrebbe accettare la variabile choice come espressione di input.
+Per ogni caso , la scelta deve corrispondere a una delle possibili <option> values che possono essere selezionate, ovvero , white, black, , o .purple, yellow, psychedelic.
+
+Per ogni caso, la funzione update() dovrebbe essere eseguita e ricevere due valori di colore, il primo per il colore di sfondo e il secondo per il colore del testo. 
+
+Ricorda che i valori dei colori sono stringhe, quindi devono essere racchiusi tra virgolette.
+
+
+
+
+*/
+
+
+
+
+const select = document.querySelector('select');
+const html = document.querySelector('.output');
+
+select.addEventListener('change', () => {
+
+  const choice = select.value;
+
+  // ADD SWITCH STATEMENT
+
+
+
+
+
+});
+
+function update(bgColor, textColor) {
+  html.style.backgroundColor = bgColor;
+  html.style.color = textColor;
+}
+
+
+
+
+
+
+
+</script>
+
+
+
+
+  </body>
+
+  
+</html>

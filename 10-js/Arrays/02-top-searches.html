@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Arrays</title>
+   
+  </head>
+
+  <body>
+
+    
+
+
+
+
+
+<div class="output" style="min-height: 125px;">
+
+  
+
+
+  <input type="text">
+  <button>Search</button>
+
+
+  <ul></ul>
+
+
+
+</div>
+
+
+
+
+
+<script>
+
+
+/*
+
+In questo esempio ti stiamo dando un falso sito di ricerca, con una casella di ricerca. L'idea è che quando i termini vengono inseriti nella casella di ricerca, i primi 5 termini di ricerca precedenti vengono visualizzati nell'elenco. Quando il numero di termini supera i 5, l'ultimo termine inizia a essere cancellato ogni volta che viene aggiunto un nuovo termine in cima, quindi i 5 termini precedenti vengono sempre visualizzati.
+
+Per completare l'app, abbiamo bisogno che tu:
+
+1 Aggiungere una riga sotto il commento // number 1 che aggiunge il valore corrente immesso nell'input di ricerca all'inizio dell'array. Questo può essere recuperato usando searchInput.value.
+
+
+2 Aggiungi una riga sotto il commento // number 2 che rimuove il valore attualmente alla fine dell'array.
+
+
+
+*/
+
+
+
+
+const list = document.querySelector('.output ul');
+const searchInput = document.querySelector('.output input');
+const searchBtn = document.querySelector('.output button');
+
+list.innerHTML = '';
+
+const myHistory = [];
+const MAX_HISTORY = 5;
+
+searchBtn.onclick = () => {
+  // we will only allow a term to be entered if the search input isn't empty
+  if (searchInput.value !== '') {
+    // number 1
+
+    // empty the list so that we don't display duplicate entries
+    // the display is regenerated every time a search term is entered.
+    list.innerHTML = '';
+
+    // loop through the array, and display all the search terms in the list
+    for (const itemText of myHistory) {
+      const listItem = document.createElement('li');
+      listItem.textContent = itemText;
+      list.appendChild(listItem);
+    }
+
+    // If the array length is 5 or more, remove the oldest search term
+    if (myHistory.length >= MAX_HISTORY) {
+      // number 2
+    }
+
+    // empty the search input and focus it, ready for the next term to be entered
+    searchInput.value = '';
+    searchInput.focus();
+  }
+}
+
+
+
+</script>
+
+
+  </body>
+  
+
+</html>

@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: #f2f2f2;
+}
+
+.box {
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  background-color: #efefef;
+}
+
+.tweets   { background-color: #A2DED0; }
+.replies  { background-color: #F4D03F; }
+.search   { background-color: #6C7A89; }
+.messages { background-color: #59ABE3; }
+.boh      { background-color: purple; }
+
+/*.app-layout{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50vh 50vh;
+
+}*/
+
+/*.app-layout{
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50vh 50vh 50vh 50vh;
+
+}*/
+
+.app-layout{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100vh;
+
+}
+
+
+/*se il mio viewport è uguale o più piccola di 1024 pixel applicherà regole diverse*/
+@media screen and (max-width: 1024px){
+
+  .app-layout{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50vh 50vh;
+
+}
+
+}
+
+
+
+
+
+/*se il mio viewport è uguale o più piccola di 700 pixel applicherà regole diverse*/
+@media screen and (max-width: 700px){
+
+  .app-layout{
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50vh 50vh 50vh 50vh 50vh;
+
+}
+
+}

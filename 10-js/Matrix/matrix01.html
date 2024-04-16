@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Matrix01</title>
+        
+</head>
+
+
+
+<body>
+
+    <script>
+
+        let activities = [ // creiamo una matrice
+
+            ['work', 9],
+            ['eat', 1],
+            ['commute', 2],
+            ['play', 1],
+            ['sleep', 7]
+        
+        ];
+
+        console.table(activities); // stampiamo nella console la matrice sotto forma di tabella
+                                   // console.table([array da stampare]); (table sta per tabella)
+
+        console.log(activities[0][1]);
+        console.log(activities.at(-1).at(-1));
+        console.log(activities[2][1]);
+
+        activities.push(['study', 2]); // aggiungiamo un array alla fine del nostro array madre
+                                       // array.push([elemento da aggiungere]);
+
+        console.table(activities);
+
+        activities.splice(1, 0, ['programming', 2]); //aggiungiamo un array nella seconda posizione del nostro array madre
+                                                     // array.splice([posizione], [elementi da rimuovere], [elementi da aggiungere]);
+
+        console.table(activities);
+
+        //--------------------------------------------
+
+        // calcola la percentuale per ogni attività nell'array madre
+
+        activities.forEach( (activity) => { //[array].forEach( ([Variabile temporanea]) => {} );
+
+
+        let percentuale = ( ( activity[1] / 24 ) * 100 ).toFixed() ; // calcola la percentuale
+
+        activity[2] = percentuale + '%';
+
+        } );
+
+        console.table(activities);
+
+        //---------------------------------------------
+
+        activities.pop(); // rimuove l'ultimo array dall'array madre
+                          // [array].pop();
+
+        console.table(activities);
+
+        //----------------------------------------------
+
+        activities.forEach( (activity) => { //rimuoviamo l'array riguardante la percentuale dall'array madre
+
+            activity.pop(2);
+
+        } );
+
+        console.table(activities);
+
+        //------------------------------------------------
+
+        activities.forEach( (activity) => { //stampa nella console tutti i dati presenti nell'array madre
+
+            activity.forEach( (data) => {
+
+                console.log(data);
+
+            } );
+
+        } );
+
+    </script>
+
+</body>
+
+</html>

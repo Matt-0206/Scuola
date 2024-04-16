@@ -1,0 +1,39 @@
+<!DOCTYPE html >
+<html>
+<head>
+
+	<meta charset="utf-8" >
+	<title>Nomi</title>
+
+</head>
+
+<body>
+
+<script>
+
+const names = ['lauRa', 'giNEvra', 'gloriA', 'giUditTa'];
+
+for(const name of names){
+
+	const lowerCase = name.toLowerCase();
+
+	//console.log(lowerCase);
+
+	const firstLetter = name[0];
+
+	//console.log(firstLetter);
+
+	const update = lowerCase.replace( firstLetter, firstLetter.toUpperCase() );
+
+	console.log(update);
+
+
+}
+
+const lunghezza = 	names.length;
+console.log(lunghezza);
+
+</script>
+
+</body>
+</html>

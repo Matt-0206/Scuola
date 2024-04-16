@@ -1,0 +1,163 @@
+a<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>capitalization</title>
+</head>
+<body> 
+<div class="output" style="min-height: 125px;">
+  <ul>  </ul>
+</div>
+<script>
+/*
+In questo esercizio abbiamo i nomi delle città del Regno Unito, ma le lettere maiuscole sono tutte incasinate. Vogliamo che tu li modifichi in modo che siano tutti minuscoli, ad eccezione della prima lettera maiuscola. Un buon modo per farlo è:
+
+1 - Converti l'intera stringa contenuta nella cityvariabile in minuscolo e memorizzala in una nuova variabile.
+2 - Prendi la prima lettera della stringa in questa nuova variabile e memorizzala in un'altra variabile.
+3 - Utilizzando quest'ultima variabile come sottostringa, sostituire la prima lettera della stringa minuscola con la prima lettera della stringa minuscola modificata in maiuscolo. Memorizza il risultato di questa procedura di sostituzione in un'altra nuova variabile.
+4 - Cambia il valore della result variabile in modo che sia uguale al risultato finale, non al file city.
+
+
+*/	
+
+const list = document.querySelector('.output ul');
+list.innerHTML = '';
+const cities = ['lonDon', 'ManCHESTer', 'BiRmiNGHAM', 'liVERpoOL'];
+
+for (const city of cities) {
+  // scrivi il tuo codice qui sotto
+  const lowerCase = city.toLowerCase();
+  const firstletter = lowerCase.slice(0);
+  if(lowerCase.includes(firstletter)){
+    
+  }
+  const result = city;
+  const listItem = document.createElement('li');
+  listItem.textContent = result;
+  list.appendChild(listItem);
+}
+</script>
+</body>
+</html>
+
+//stringhe
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>stringhe</title>
+</head>
+<body>
+	<button id="btn">Press me</button>
+</body>
+<script type="text/javascript">
+	
+// let cattivastringa = 'luca"
+//let stringa2 = "I'm feeling lucky"
+//let stringa3 = 'I\'m feeling lucky' // "\" escape character, serve a non fermare l'apice
+// ""
+// ''
+// `` (backtick)
+//const name = "chris"
+//const greeting = `hello, ${name}`
+// const one = "hello, "
+// const two = "how are you?"
+// const joined = `${one}${two}`
+// console.log(joined)
+
+// const button = document.querySelector("button");
+// function greet() {
+// 	let name = prompt("Please enter your name");
+//   	alert("Hello " + name + "! How are you today?");
+// }
+// button.addEventListener("click", greet);
+//concatenare con il più
+//const greeting = "hello"
+//const name = "chris"
+//console.log(hello + "," +name)
+//console.log(`${greeting}, ${name}`)
+//const name = "andrea"
+//const number = 10
+//console.log(`${name}, ${number}`)
+//const myString = "123"
+//const myNumber = Number(myString)
+//const myNumber2 = 123;
+//const myString2 = myNumber2.toString();
+//console.log(typeof myString2)
+// const song = "we will rock you";
+// const score = 9
+// const highestScore = 10
+// const output = `mi piace la canzone ${song}. gli ho dato un punteggio di ${(score / highestScore * 100)}%`;
+// console.log(output)
+
+//const browserType = "firefox"
+
+
+//const primalettera = browserType[0];
+//const ultimalettera = browserType[browserType.length - 1];
+//console.log(browserType.length)
+
+//console.log(ultimalettera)
+
+
+// const animale = 'cane';
+// const primoCarattere = animale[0];
+// const ultimoCarattere = animale[animale.length -1]
+
+// //console.log(animale.length);
+// //console.log("l'ultima lettera è: "+ultimoCarattere)
+
+// const word = "precipitevolissimamente"
+
+//cercare una substring all'interno di una string
+
+// console.log(word[word.length -1])
+	
+// const browserType = 'mozilla'
+// if(browserType.includes('zilla')){
+// 	console.log("trovato")
+// }else{
+// 	console.log("non trovato")
+// }
+// if(browserType.startsWith('zilla')){
+// 	console.log("trovato")
+// }else{
+// 	console.log("non trovato")
+// }
+// const browserType = 'mozilla'
+// if(browserType.endsWith('zilla')){
+// console.log("trovato")
+// }else{
+// console.log("non trovato")
+// }
+
+// const slogan = 'un pennello eccezionale per un quadro eccezionale';
+
+// console.log(slogan.indexOf("eccezionale"))
+// const primaComparsa = slogan.indexOf("eccezionale")
+// const secondaComparsa = slogan.indexOf("eccezionale", primaComparsa +1)
+// console.log(secondaComparsa)
+
+// const browserType = 'mozilla'
+
+// console.log(browserType.slice(2));
+	
+// const data = 'Essere O NON essEre'
+// console.log(data.toLowerCase())
+// console.log(data.toUpperCase())
+
+// const oggetto = 'cartello'
+// const updated = oggetto.replace('cart',"mart")
+// console.log(updated)
+
+// let oggetto = 'cartello'
+// oggetto = oggetto.replace('cart',"mart")
+// console.log(oggetto)
+// let quote = 'To be or not to be'
+// quote = quote.replaceAll("be", "code");
+// console.log(quote)
+
+
+</script>
+</html>
