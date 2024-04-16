@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Matrici - operazioni</title>
+    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js"></script> 
+
+  </head>
+
+
+
+  <body>
+
+<p>La tua azienda vende rose.</p>
+
+<p>Rose rosse: 3$ l'una, rose bianche: 4$ l'una, rose gialle: 2$ l'una</p>
+
+<p>Il lunedì hai venduto 260 rose; il martedì hai venduto 200 rose; il mercoledì hai venduto 120 rose</p>
+
+<p>Quale è il totale di tutte le vendite?</p>
+
+
+<img src="roses.png">
+
+
+
+
+<div id="demo"></div>
+
+
+<div id="total"></div>
+
+
+ <script>
+
+   let mA = math.matrix([
+
+    [120,90,60],
+    [80,70,40],
+    [60,40,20]
+
+   ]);
+
+   let mB = math.matrix([
+
+    [3, 4, 2]
+
+   ]);
+
+   let result = math.multiply(mB, mA);
+
+   console.log(result);
+
+   let totale = 0;
+
+  result.forEach(element => {
+    
+    totale += element;
+
+  });
+
+   console.log(totale);
+
+   document.getElementById('demo').innerHTML = result;
+   document.getElementById('total').innerHTML = totale;
+
+  </script>
+
+
+  </body>
+
+
+
+ 
+
+</html>
