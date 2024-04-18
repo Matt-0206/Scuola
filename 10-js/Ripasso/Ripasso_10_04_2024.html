@@ -141,32 +141,23 @@
 
 //es8
 
-    let mese = "Dicembre";
-
+    let mese = prompt("Inserisci il mese");
 
     switch (mese) {
 
-    case "Settembre":
-    case "Ottobre":
-    case "Novembre":
+    case (mese == "Settembre" || "Ottobre" || "Novembre"):
         console.log("La stagione è Autunno");
         break;
 
-    case "Dicembre":
-    case "Gennaio":
-    case "Febbraio":
+    case (mese == "Dicembre" || "Gennaio" || "Febbraio"):
         console.log("La stagione è Inverno");
         break;
 
-    case "Marzo":
-    case "Aprile":
-    case "Maggio":
+    case (mese == "Marzo" || "Aprile" || "Maggio"):
         console.log("La stagione è Primavera");
         break;
 
-    case "Giugno":
-    case "Luglio":
-    case "Agosto":
+    case (mese == "Giugno" || "Luglio" || "Agosto"):
         console.log("La stagione è Estate");
         break;
 
@@ -176,28 +167,19 @@
 
 //es9
 
-    let month = "gennaio";
+    let month = prompt("Inserisci il mese");
 
     switch(month){
 
-        case "gennaio": 
-        case "marzo": 
-        case "maggio": 
-        case "luglio": 
-        case "agosto": 
-        case "ottobre": 
-        case "dicembre":
+        case (month == "gennaio" ||  "marzo" ||  "maggio" ||  "luglio" ||  "agosto" ||  "ottobre" ||  "dicembre"):
             console.log(`${month} ha 31 giorni`)
             break;
 
-        case "febbraio":
+        case (month == "febbraio"):
             console.log(`${month} ha 28 giorni`);
             break;
 
-        case "aprile": 
-        case "giugno":
-        case "settembre":
-        case "novembre":
+        case (month == "aprile" || "giugno" || "settembre" || "novembre"):
             console.log(`${month} ha 30 giorni`);
             break;
 
