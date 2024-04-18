@@ -112,62 +112,67 @@
 
     let voto = 100;
 
-    switch(voto){
+        switch(true) {
 
-        case voto >= 80 || voto < 100:
-            console.log("A");
-            break;
+    case (voto >= 80 && voto <= 100):
+        console.log("A");
+        break;
 
-        case voto >= 70 || voto < 79:
-            console.log("B");
-            break;
+    case (voto >= 70 && voto < 80):
+        console.log("B");
+        break;
 
-        case voto >= 60 || voto < 69:
-            console.log("C");
-            break;
-            
-        case voto >= 50 || voto < 59:
-            console.log("D");
-            break;
+    case (voto >= 60 && voto < 70):
+        console.log("C");
+        break;
 
-        case voto >= 0 || voto < 49:
-            console.log("F");
-            break;
+    case (voto >= 50 && voto < 60):
+        console.log("D");
+        break;
 
-        default:
-            console.log("N/C");
-            break;
-
+    case (voto >= 0 && voto < 50):
+        console.log("F");
+        break;
+        
+    default:
+        console.log("N/C");
     }
 
 
 //es8
 
-    let mese = prompt("Inserisci il mese");
+    let mese = "Dicembre";
 
-    switch(mese){
 
-        case mese === "Settembre":
+    switch (mese) {
 
-            console.log("La stagione è Autunno");
-            break;
+    case "Settembre":
+    case "Ottobre":
+    case "Novembre":
+        console.log("La stagione è Autunno");
+        break;
 
-        case mese === "Ottobre":
+    case "Dicembre":
+    case "Gennaio":
+    case "Febbraio":
+        console.log("La stagione è Inverno");
+        break;
 
-            console.log("La stagione è Autunno");
-            break;
+    case "Marzo":
+    case "Aprile":
+    case "Maggio":
+        console.log("La stagione è Primavera");
+        break;
 
-        case mese === "Novembre":
+    case "Giugno":
+    case "Luglio":
+    case "Agosto":
+        console.log("La stagione è Estate");
+        break;
 
-            console.log("La stagione è Autunno");
-            break;
-
-        case mese === "Dicembre":
-
-            console.log("La stagione è Inverno");
-            break;
-
-    }
+    default:
+        console.log("Mese non valido");
+}
 
 //es9
 
