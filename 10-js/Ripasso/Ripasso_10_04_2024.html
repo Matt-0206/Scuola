@@ -171,18 +171,20 @@
 
     switch(month){
 
-        case (month == "gennaio" ||  "marzo" ||  "maggio" ||  "luglio" ||  "agosto" ||  "ottobre" ||  "dicembre"):
-            console.log(`${month} ha 31 giorni`)
-            break;
+    case "gennaio": case "marzo": case "maggio": case "luglio": case "agosto": case "ottobre": case "dicembre":
+        console.log(`${month} ha 31 giorni`);
+        break;
 
-        case (month == "febbraio"):
-            console.log(`${month} ha 28 giorni`);
-            break;
+    case "febbraio":
+        console.log(`${month} ha 28 giorni`);
+        break;
 
-        case (month == "aprile" || "giugno" || "settembre" || "novembre"):
-            console.log(`${month} ha 30 giorni`);
-            break;
+    case "aprile": case "giugno": case "settembre": case "novembre":
+        console.log(`${month} ha 30 giorni`);
+        break;
 
+    default:
+        console.log("Mese non valido");
     }
 
 </script>
