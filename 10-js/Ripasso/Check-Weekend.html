@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8"/>
+
+  <title>Check-Weekend</title>
+
+  <script src="https://unpkg.com/mathjs@12.4.1/lib/browser/math.js"></script>
+
+</head>
+
+
+<body>
+
+<script>
+
+  /* fuction week-end
+    prompt giorno della settimana
+    output giorno lavorativo o fine settimana
+    condizione if */
+
+  let day = prompt("inserisci il giorno della settimana").toLowerCase();
+
+
+  function checkWeekEnd(){
+
+    if(day === "lunedì" || day === "martedì" || day === "mercoledì" || day === "giovedì" || day === "venerdì"){
+
+    console.log(`${day} è un giorno lavorativo`);
+
+    }else if(day === "sabato" || day === "domenica"){
+
+      console.log(`${day} è un giorno del fine settimana`);
+    
+    }else{
+
+      console.log(`${day} non è un giorno valido`);
+
+    }
+
+  }
+
+  console.log(checkWeekEnd());
+
+</script>
+
+</body>
+
+</html>
+</html>

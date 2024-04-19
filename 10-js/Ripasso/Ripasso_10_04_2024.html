@@ -112,31 +112,54 @@
 
     let voto = 100;
 
-        switch(true) {
+    //     switch(true) {
 
-    case (voto >= 80 && voto <= 100):
+    // case (voto >= 80 && voto <= 100):
+    //     console.log("A");
+    //     break;
+
+    // case (voto >= 70 && voto < 80):
+    //     console.log("B");
+    //     break;
+
+    // case (voto >= 60 && voto < 70):
+    //     console.log("C");
+    //     break;
+
+    // case (voto >= 50 && voto < 60):
+    //     console.log("D");
+    //     break;
+
+    // case (voto >= 0 && voto < 50):
+    //     console.log("F");
+    //     break;
+        
+    // default:
+    //     console.log("N/C");
+    // }
+
+    switch(true) {
+
+    case (voto >= 80):
         console.log("A");
         break;
 
-    case (voto >= 70 && voto < 80):
+    case (voto >= 70):
         console.log("B");
         break;
 
-    case (voto >= 60 && voto < 70):
+    case (voto >= 60):
         console.log("C");
         break;
 
-    case (voto >= 50 && voto < 60):
+    case (voto >= 50):
         console.log("D");
         break;
 
-    case (voto >= 0 && voto < 50):
+    case (voto <= 50):
         console.log("F");
         break;
-        
-    default:
-        console.log("N/C");
-    }
+}
 
 
 //es8
@@ -167,28 +190,43 @@
 
 //es9
 
-    let month = prompt("Inserisci il mese");
+    let month = prompt("Inserisci il mese").toLowerCase();
 
-    switch(month){
+    // switch(month){
 
-    case "gennaio": case "marzo": case "maggio": case "luglio": case "agosto": case "ottobre": case "dicembre":
+    // case "gennaio": case "marzo": case "maggio": case "luglio": case "agosto": case "ottobre": case "dicembre":
+    //     console.log(`${month} ha 31 giorni`);
+    //     break;
+
+    // case "febbraio":
+    //     console.log(`${month} ha 28 giorni`);
+    //     break;
+
+    // case "aprile": case "giugno": case "settembre": case "novembre":
+    //     console.log(`${month} ha 30 giorni`);
+    //     break;
+
+    // default:
+    //     console.log("Mese non valido");
+    // }
+
+    if(month === "gennaio" || month === "marzo" || month === "maggio" || month === "luglio" || month === "agosto" || month === "ottobre" || month === "dicembre"){
+
         console.log(`${month} ha 31 giorni`);
-        break;
 
-    case "febbraio":
+    }else if(month === "febbraio"){
+
         console.log(`${month} ha 28 giorni`);
-        break;
 
-    case "aprile": case "giugno": case "settembre": case "novembre":
+    }else if(month === "aprile" || month === "giugno" || month === "settembre" || month === "novembre"){
+
         console.log(`${month} ha 30 giorni`);
-        break;
 
-    default:
-        console.log("Mese non valido");
     }
 
 </script>
 
 </body>
 
+</html>
 </html>
