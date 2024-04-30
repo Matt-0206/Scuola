@@ -10,7 +10,7 @@ function setup() {
     
     ];
  
-   console.log(kitties[2].weight); 
+   //console.log(kitties[2].weight); 
   
     let pesoTot = 0;
     
@@ -21,6 +21,18 @@ function setup() {
     }
     
     console.log(pesoTot);
+    
+    
+    
+    let etàTot = 0;
+    
+    for(let n = 0; n < kitties.length; n++){
+     
+      etàTot += kitties[n].age;
+      
+    }
+    
+    console.log(etàTot);
   
 }
 

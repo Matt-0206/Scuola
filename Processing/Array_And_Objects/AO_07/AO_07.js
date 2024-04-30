@@ -20,7 +20,7 @@ function draw() {
     
     rect( rectObjs[i].xpos, rectObjs[i].ypos, 50, 24 );
       
-    rectObjs[i].ypos += 1;
+    rectObjs[i].ypos += rectObjs[i].speed;
     
   }
   
@@ -29,6 +29,8 @@ function draw() {
 
 function mousePressed(){
 
-  rectObjs.push({xpos: mouseX, ypos: mouseY, fillColor: random(255)});
+  rectObjs.push({ xpos: mouseX, ypos: mouseY, fillColor: random(255), speed: random(10) });
+  
+  console.log(rectObjs);
   
 }

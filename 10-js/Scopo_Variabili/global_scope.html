@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8"/>
+    <title>Global Scope</title>
+
+  </head>
+
+
+
+  <body>
+
+  <script>
+
+let a = 'Javascript';
+
+let b = 10;
+
+  function letsLearnScope(){
+
+    console.log(a, b);
+
+      if(true){
+
+        let a = 'Python';
+        let b = 100;
+
+        console.log(a, b);
+
+      }
+
+    console.log(a, b);
+
+  }
+
+letsLearnScope();
+
+console.log(a, b);
+
+  </script>
+
+  </body>
+
+
+
+</html>

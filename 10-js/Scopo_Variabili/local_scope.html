@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8"/>
+    <title>Local Scope</title>
+
+  </head>
+
+
+
+  <body>
+
+<script>
+
+let a = 'Javascript';
+
+let b = 10;
+
+  function letsLearnScope(){
+
+    console.log(a, b);
+    let value = false;
+
+      if(true){
+
+        let a = 'Python';
+        let b = 20;
+        let c = 30;
+        let d = 40;
+        value = !value; //il ! davanti a value equivale al suo contrario, quindi da false equivale a true
+        console.log(a, b, c, value);
+
+      }
+
+      console.log(a, b, value);
+
+      console.log(c);
+
+  }
+
+letsLearnScope();
+
+</script>
+
+</body>
+
+</html>
