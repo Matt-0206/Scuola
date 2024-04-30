@@ -29,6 +29,6 @@ function draw() {
 
 function mousePressed(){
 
-  rectObjs.push({xpos: mouseX, ypos: mouseY, fillColo: random(255)});
+  rectObjs.push({xpos: mouseX, ypos: mouseY, fillColor: random(255)});
   
 }
