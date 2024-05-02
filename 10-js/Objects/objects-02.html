@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8"/>
+    <title></title>
+
+</head>
+
+
+ 
+<body>
+
+<script>
+
+const person ={
+
+    firstName: 'Matteo',
+    lastName: 'Alliu',
+    age: 18,
+    country: 'Italy',
+    city: 'San Giovanni al Natisone',
+
+    skills: [
+
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'Python',
+        'Boxe',
+        'Gym'
+
+    ],
+
+    isMarried: false, 
+    'phone number': '+39 371-326-0808',
+
+    getFullName: function(){
+
+            return `${this.firstName} ${this.lastName}`;
+
+    }
+
+}
+
+console.log(person.getFullName());
+
+person.title = 'Dott.';
+
+console.log(person.title);
+
+person.skills.push('speed reading');
+
+console.log(person.skills);
+
+/*
+
+Dott. Matteo Alliu è esperto in HTML, CSS., JjavScript e speed reading.
+
+*/
+
+person.getPersonInfo = function(){
+
+    let lastSkill = this.skills.splice(-1, 1);
+
+    // return console.log(lastSkill);
+
+    let skillWithoutLastSkill = this.skills.join(', ');
+
+    console.log('Array senza ultimo elemento separati da virgola' + skillWithoutLastSkill);
+
+    let skills = `${skillWithoutLastSkill}, è ${lastSkill}`;
+
+    let getFullName = this.getFullName();
+
+    let msg = `${this.title} ${FullName} è esperto in ${skills}`;
+
+    return msg;
+}
+
+person.getPersonInfo();
+
+</script>
+
+</body>
+
+</html>

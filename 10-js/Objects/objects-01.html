@@ -10,12 +10,12 @@
 </head>
 
 
-
+ 
 <body>
 
 <script>
 
-const person = {
+const person ={
 
     firstName: 'Matteo',
     lastName: 'Alliu',
@@ -35,25 +35,18 @@ const person = {
     ],
 
     isMarried: false, 
-    'phone number': '+39 371-326-0808'
+    'phone number': '+39 371-326-0808',
+
+    getFullName: function(){
+
+            return `${this.firstName} ${this.lastName}, ha ${this.age} anni`;
+
+    }
 
 }
 
-console.log(person);
+console.log(person.getFullName());
 
-console.log(person.age);
-
-console.log(person.isMarried);
-
-console.log(person['country']);
-
-console.log(person['phone number']);
-
-console.log(person[location]);
-
-console.log(person.skills[0]);
-
-console.log(person.skills[2]);
 
 </script>
 

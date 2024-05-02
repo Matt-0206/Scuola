@@ -19,10 +19,12 @@ let a = 'Javascript';
 
 let b = 10;
 
+let value = 'positive';
+
   function letsLearnScope(){
 
     console.log(a, b);
-    let value = false;
+    //let value = false;
 
       if(true){
 
@@ -30,18 +32,21 @@ let b = 10;
         let b = 20;
         let c = 30;
         let d = 40;
-        value = !value; //il ! davanti a value equivale al suo contrario, quindi da false equivale a true
+        //value = !value; //il ! davanti a value equivale al suo contrario, quindi da false equivale a true
+        let value = false;
         console.log(a, b, c, value);
 
       }
 
       console.log(a, b, value);
 
-      console.log(c);
+      //console.log(c);
 
   }
 
 letsLearnScope();
+
+console.log(a, b, value);
 
 </script>
 
