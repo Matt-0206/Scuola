@@ -46,7 +46,7 @@ function mousePressed(){
 
 //  rectObjs.push({ xpos: mouseX, ypos: mouseY, fillColor: random(255), speed: random(10)});
   
-    rectObjs.push({ xpos: mouseX, ypos: mouseY, fillColor: random(255), up_down: random(-8, 8), left_right: random(-8, 8)});
+  rectObjs.push({ xpos: mouseX, ypos: mouseY, fillColor: random(255), up_down: random(-8, 8), left_right: random(-8, 8)});
 
   console.log(rectObjs);
   
