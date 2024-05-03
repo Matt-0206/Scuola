@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8"/>
+    <title></title>
+
+</head>
+
+
+ 
+<body>
+
+<script>
+
+const person ={
+
+    firstName: 'Matteo',
+    lastName: 'Alliu',
+    age: 18,
+    country: 'Italy',
+    city: 'San Giovanni al Natisone',
+
+    skills: [
+
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'Python',
+        'Boxe',
+        'Gym'
+
+    ],
+
+    isMarried: false,
+
+    getFullName: function(){
+
+            return `${this.firstName} ${this.lastName}, ha ${this.age} anni`;
+
+    },
+
+    getPersonInfo: function(){
+
+
+        return`Sono ${this.firstName} e vivo a ${this.city}.`;
+
+    }
+
+}
+
+console.log(person.getFullName());
+
+console.log(person.getPersonInfo());
+
+
+
+const copyPerson = Object.assign( {}, person ); //assegniamo l'oggetto person a un clone person
+
+copyPerson.listenToMusic = true;
+
+console.log("Mostra il contenuto di copyPerson");
+
+console.log(copyPerson);
+
+let keys = Object.keys(copyPerson); //estrae tutte le chiavi dall'oggetto copyPerson            
+
+console.log(keys);
+
+const values = Object.values(copyPerson);
+
+console.log(values);
+
+const entries = Object.entries(copyPerson);
+
+console.log(entries);
+
+console.log(person.hasOwnProperty('skills'))
+
+
+</script>
+
+</body>
+
+</html>

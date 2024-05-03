@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8"/>
+    <title></title>
+
+</head>
+
+
+ 
+<body>
+
+<script>
+
+/*
+
+- creare un oggetto vuoto di nome dog
+- stampare l'oggetto dog nella console
+- aggiungere name, legs, color, age, bark all'oggetto
+- restituire in console i valori assegnati
+- settare nuove proprietà all'oggetto dog: breed
+
+*/
+
+let dog = {}
+
+console.log(dog);
+
+dog.name = 'Fuffi';
+
+dog.legs = '4';
+    
+dog.color = 'Black';
+
+dog.age = '4';
+
+dog.bark = function(){
+
+  return 'woof woof'
+
+};
+
+console.log(dog, dog.bark());
+
+dog.breed = 'Husky';
+
+console.log(dog, dog.bark());
+
+const keys = Object.keys(dog);
+
+console.log(keys);
+
+</script>
+
+</body>
+
+</html>

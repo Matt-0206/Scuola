@@ -63,24 +63,23 @@ Dott. Matteo Alliu è esperto in HTML, CSS., JjavScript e speed reading.
 
 person.getPersonInfo = function(){
 
-    let lastSkill = this.skills.splice(-1, 1);
-
-    // return console.log(lastSkill);
-
-    let skillWithoutLastSkill = this.skills.join(', ');
+    let skillWithoutLastSkill = this.skills.splice(0, this.skills.length - 1).join(', ');
 
     console.log('Array senza ultimo elemento separati da virgola' + skillWithoutLastSkill);
 
-    let skills = `${skillWithoutLastSkill}, è ${lastSkill}`;
+    let lastSkill = this.skills.splice(-1, 1);
+
+    let skills = `${skillWithoutLastSkill}, e ${lastSkill}`;
 
     let FullName = this.getFullName();
 
     let msg = `${this.title} ${FullName} è esperto in ${skills}`;
 
     return msg;
+    
 }
 
-person.getPersonInfo();
+//person.getPersonInfo();
 
 console.log(person.getPersonInfo());
 
