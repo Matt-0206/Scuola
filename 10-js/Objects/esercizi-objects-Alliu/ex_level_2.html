@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+  <title>Exercise level 2</title>
+  <meta charset="utf-8">
+</head>
+
+
+
+
+
+
+<body>
+
+
+
+
+
+
+
+<script>
+	
+const users = {
+
+    Alex: {
+        email: 'alex@alex.com',
+        skills: ['HTML', 'CSS', 'JavaScript'],
+        age: 20,
+        isLoggedIn: false,
+        points: 30
+    },
+
+    Asab: {
+        email: 'asab@asab.com',
+        skills: ['HTML', 'CSS', 'JavaScript', 'Redux', 'MongoDB', 'Express', 'React', 'Node'],
+        age: 25,
+        isLoggedIn: false,
+        points: 50
+    },
+
+    Brook: {
+        email: 'daniel@daniel.com',
+        skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
+        age: 30,
+        isLoggedIn: true,
+        points: 50
+    },
+
+    Daniel: {
+        email: 'daniel@alex.com',
+        skills: ['HTML', 'CSS', 'JavaScript', 'Python'],
+        age: 20,
+        isLoggedIn: false,
+        points: 40
+    },
+
+    John: {
+        email: 'john@john.com',
+        skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node.js'],
+        age: 20,
+        isLoggedIn: true,
+        points: 50
+    },
+
+    Thomas: {
+        email: 'thomas@thomas.com',
+        skills: ['HTML', 'CSS', 'JavaScript', 'React'],
+        age: 20,
+        isLoggedIn: false,
+        points: 40
+    },
+
+    Paul: {
+        email: 'paul@paul.com',
+        skills: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node'],
+        age: 20,
+        isLoggedIn: false,
+        points: 40
+    }
+
+}
+
+
+for(user in users){
+
+//console.log(user);
+
+//console.log(users[user].age);
+
+}
+
+// 1
+ 
+let winner;
+let max =0;
+
+for(user in users){
+
+let skills = Object.values(users[user].skills).length;
+
+if(skills > max){
+
+    max = skills,
+    
+    winner = user;
+
+}
+
+}
+
+console.log("L'utente con più skills è: " + winner);
+
+// -----------------------------------
+
+
+
+// 2
+
+let logged = 0;
+let bigger = 0;
+
+for(user in users){
+
+if (users[user].isLoggedIn === true){
+
+    logged += 1;
+
+
+
+}
+
+if (users[user].points >= 50){
+
+    bigger += 1
+
+}
+
+}
+
+console.log('Gli utenti connessi sono: ' + logged);
+
+console.log('Gli utenti con 50 o più punti sono: ' + bigger);
+
+// ----------------------------------- 
+
+
+
+// 3
+
+for(user in users){
+
+if(users[user].skills.includes('MongoDB') && users[user].skills.includes('Express') && users[user].skills.includes('React') && users[user].skills.includes('Node')){
+
+    console.log('I MERN stack developers sono: ' + user);
+
+}
+
+}
+
+// -----------------------------------
+
+
+
+// 4
+
+let copy = Object.assign(users);
+
+copy.Name = 'Matteo';
+
+console.log(copy);
+
+// -----------------------------------
+
+
+
+// 5
+
+console.log(Object.keys(users));
+
+// -----------------------------------
+
+
+
+// 6
+
+console.log(Object.values(users));
+
+// -----------------------------------
+
+
+
+// 7
+
+let country = {};
+
+country.nome = 'Albania';
+
+country.capitale = 'Tirana';
+
+country.popolazione = '2,778 milioni';
+
+country.lingue = ['Tosco', 'Ghego'];
+
+console.log(country)
+
+let msg = `L'${country.nome} ha come capitale ${country.capitale}, ha una popolazione di ${country.popolazione} e la lingua è divisa in ${country.lingue[0]} e ${country.lingue[1]}`;
+
+console.log(msg);
+
+// -----------------------------------
+
+</script>
+
+</body>
+
+</html>

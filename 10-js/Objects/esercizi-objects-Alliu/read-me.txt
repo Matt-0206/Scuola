@@ -1,0 +1,14 @@
+
+// 1 - Trova la persona che ha più skills all'interno di users object
+
+// 2 - Conta gli utenti loggati. Conta gli utenti che hanno 50 o più punti.
+
+// 3 - Trova le persone che sono MERN stack developers
+
+// 4 - Inserisci il tuo nome all'interno dell'users objects senza modificare l'oggetto originale.
+
+// 5 - Ottieni tutte le Keys (proprietà) dell'users object
+
+// 6 - Ottieni tutti i valori dell'users object
+
+// 7 - Crea un oggetto 'country' inserendo le seguenti proprietà: nome, capitale, popolazione, lingue (un array con più lingue). Stampa a console tutte le proprietà creando una frase. Es: 'La Spagna ha come capitale Madrid. La popolazione è di...'
