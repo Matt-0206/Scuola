@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+  <title>Exercise level 3</title>
+  <meta charset="utf-8">
+</head>
+
+
+
+
+
+
+<body>
+
+
+
+
+
+
+
+<script>
+	
+const studenti = {
+
+Matteo: {
+
+    nome: 'Matteo',
+    cognome: 'Alliu',
+    età: 18,
+    genere: 'M',
+    hobby: ['box', 'palestra'],
+    punti: 52,
+    patenteGuida: true
+
+},
+
+Mattia_Lenarduzzi: {
+
+    nome: 'Mattia',
+    Cognome: 'Lenarduzzi',
+    età: 18,
+    genere: 'M',
+    hobby: ['andare in moto', 'andare a pesca'],
+    punti: 36,
+    patenteGuida: true
+
+},
+
+Filippo: {
+
+    nome: 'Filippo',
+    cognome: 'Turra',
+    età: 17,
+    genere: 'M',
+    hobby: ['Pokemon', 'VideoGiochi', 'Dormire'],
+    punti: 33,
+    patenteGuida: false
+
+},
+
+Davide: {
+
+    nome: 'Davide',
+    cognome: 'Corpus',
+    età: 18,
+    genere: 'M',
+    hobby: ['calcio', 'tennis', 'fotografia', 'videogames'],
+    punti: '45',
+    patenteGuida: false
+
+},
+
+Daniel: {
+ 
+    nome: 'Daniel',
+    cognome: 'Donatini',
+    età: 17,
+    genere: 'M',
+    hobby: ['Restart Soviet Union'],
+    punti: '32',
+    patenteGuida: true
+  
+},
+
+Mihael: {
+
+    nome: 'Mihael',
+    congnome: 'Slipcevic',
+    età: 15,
+    genere: 'M',
+    hobby: ['R6S', 'Pallamano', 'Musica'],
+    punti:45,
+    patenteGuida:false
+
+},
+
+Mario: {
+
+    nome: 'Mario',
+    cognome: 'Carluccio',
+    età: 15,
+    genere: 'M',
+    hobby: ['guardare donne nude'],
+    punti: 20,
+    patenteGuida: false
+
+},
+
+Manuela : {
+    nome: 'Manuela',
+    cognome: 'Puleo',
+    età : 17,
+    genere: 'F' ,
+    hobby : ['ballare','leggere i manga','guardare gli anime  ', 'ascoltare musica' ],
+    punti : 45,
+    patenteGuida:false 
+
+},
+
+Mattia_Del_Pin: {
+
+    nome: 'Mattia',
+    cognome: 'Del Pin',
+    età: 16,
+    genere: 'M',
+    hobby: ['netflix', 'dormire', 'videogames'],
+    punti: '30',
+    patenteGuida: false
+
+},
+
+Lars: {
+  
+    nome: 'Lars',
+    cognome: 'Godeassi',
+    età: 16,
+    genere: 'M',
+    hobby: ['leggere', 'scrivere', 'videogiochi', 'softair'],
+    punti: 58,
+    patenteGuida: false
+
+}
+
+}
+
+/*
+
+1) utente con più hobby //
+2) utente con 18 o più anni // 
+3) stampare nomi di chi ha la patente //
+4) stampare i nomi degli utenti di generi femminile //
+5) stampare nomi di chi inizia con la M //
+
+
+*/
+
+//1 
+
+let winner = [];
+let max = 0;
+
+for(studente in studenti){
+
+let hobby = Object.values(studenti[studente].hobby).length;
+
+if(hobby > max){
+
+    max = hobby;
+
+    winner.push(studente);
+
+}
+
+}
+
+console.log('L\'Utente con più hobby è:', winner);
+
+//------------------------------------
+
+
+
+// 2
+
+let maggiorenni = [];
+
+for(studente in studenti){
+
+    if(studenti[studente].età >= 18){
+
+        maggiorenni.push(studente);
+
+    }
+
+}
+
+console.log('Gli studenti maggiorenni sono: ' , maggiorenni);
+
+//------------------------------------
+
+
+
+// 3
+
+let patentati = [];
+
+for(studente in studenti){
+
+    if(studenti[studente].patenteGuida === true){
+
+        patentati.push(studente);
+
+    }
+
+}
+
+console.log('Gli studenti patentati sono' , patentati);
+
+//------------------------------------
+
+
+
+// 4
+
+for(studente in studenti){
+
+    if(studenti[studente].genere === 'F'){
+
+        console.log('Gli studenti di genere femminile sono: ', studente)
+
+    }
+
+}
+
+//-------------------------------------
+
+
+
+// 5
+
+let inizialeM = [];
+
+for(studente in studenti){
+
+    if(studenti[studente].nome.startsWith('M')){
+
+        inizialeM.push(studente);
+
+    }
+
+}
+
+console.log('Gli studenti che hennao l\'iniziale M sono: ' , inizialeM);
+
+//-------------------------------------
+
+</script>
+
+</body>
+
+</html>

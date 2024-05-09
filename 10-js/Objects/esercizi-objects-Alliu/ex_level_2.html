@@ -153,7 +153,7 @@ console.log('Gli utenti con 50 o più punti sono: ' + bigger);
 
 for(user in users){
 
-if(users[user].skills.includes('MongoDB') && users[user].skills.includes('Express') && users[user].skills.includes('React') && users[user].skills.includes('Node')){
+if(users[user].skills.includes('MongoDB' && 'Express' && 'React' && 'Node')){
 
     console.log('I MERN stack developers sono: ' + user);
 
@@ -167,9 +167,15 @@ if(users[user].skills.includes('MongoDB') && users[user].skills.includes('Expres
 
 // 4
 
-let copy = Object.assign(users);
+const copy = Object.assign({}, users);
 
-copy.Name = 'Matteo';
+/*users2.Matteo = {
+
+}
+
+console.log(users2);*/
+
+copy["Matteo"] = {};
 
 console.log(copy);
 
@@ -179,7 +185,7 @@ console.log(copy);
 
 // 5
 
-console.log(Object.keys(users));
+console.log(Object.keys(copy));
 
 // -----------------------------------
 
@@ -187,7 +193,9 @@ console.log(Object.keys(users));
 
 // 6
 
-console.log(Object.values(users));
+let values = Object.values(copy)
+
+console.log('I valori sono ' , values);
 
 // -----------------------------------
 
@@ -207,7 +215,7 @@ country.lingue = ['Tosco', 'Ghego'];
 
 console.log(country)
 
-let msg = `L'${country.nome} ha come capitale ${country.capitale}, ha una popolazione di ${country.popolazione} e la lingua è divisa in ${country.lingue[0]} e ${country.lingue[1]}`;
+let msg = `L'${country.nome} ha come capitale ${country.capitale}, ha una popolazione di ${country.popolazione} persone e la lingua è divisa in ${country.lingue[0]} e ${country.lingue[1]}`;
 
 console.log(msg);
 
