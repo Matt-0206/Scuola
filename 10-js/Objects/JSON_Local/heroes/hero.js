@@ -2,7 +2,7 @@
 
 async function populate(){
 
-    const requestURL = "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json"; // gli viene assegnato un link 
+    const requestURL = "https://mdn.github.io/10-js/Objects/JSON_Local/heroes/superheroes.json"; // gli viene assegnato un link 
 
     const request = new Request(requestURL) // crea un nuovo oggetto
 
@@ -98,6 +98,30 @@ function populateHeroes(obj){
     }
 
 
+
+}
+
+function footer(obj){
+
+    const footer = document.createElement('footer');
+
+    footer = obj.footer
+
+    for(const element of footer){
+
+        const p1 = document.createElement('p');
+        const p2 = document.createElement('p');
+        const p3 = document.createElement('p');
+
+        p1.textContent = `Nome del progetto: ${element.name}`
+        p2.textContent = `Fatto da: ${element.by}`
+        p3.textContent = `Ultimo aggiornamento: ${element.update}`;
+        
+    }
+
+    footer.append(p1)
+    footer.append(p2)
+    footer.append(p3)
 
 }
 

@@ -48,10 +48,18 @@
       ]
     }
 
+  ],
 
+  "footer" :  [
+
+    {
+
+      "name" : "Super Hero Squad",
+      "by" : "Matteo",
+      "update" : "14/05/2024"
+
+    }
 
   ]
-
-
 
 }
