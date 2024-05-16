@@ -2,7 +2,7 @@
 
 async function populate(){
 
-    const requestURL = "https://mdn.github.io/10-js/Objects/JSON_Local/heroes/superheroes.json"; // gli viene assegnato un link 
+    const requestURL = "https://matt-0206.github.io/my-repository/superheroes.json"; // gli viene assegnato un link 
 
     const request = new Request(requestURL) // crea un nuovo oggetto
 
@@ -12,6 +12,7 @@ async function populate(){
 
     populateHeader(superHeroes);
     populateHeroes(superHeroes);
+    populateFooter(superHeroes);
 
 }
 
@@ -101,27 +102,26 @@ function populateHeroes(obj){
 
 }
 
-function footer(obj){
+function populateFooter(obj){
 
     const footer = document.createElement('footer');
 
-    footer = obj.footer
-
-    for(const element of footer){
+    for(const element of obj){
 
         const p1 = document.createElement('p');
         const p2 = document.createElement('p');
         const p3 = document.createElement('p');
 
-        p1.textContent = `Nome del progetto: ${element.name}`
-        p2.textContent = `Fatto da: ${element.by}`
+        p1.textContent = `Nome del progetto: ${element.name}`;
+        p2.textContent = `Fatto da: ${element.by}`;
         p3.textContent = `Ultimo aggiornamento: ${element.update}`;
         
+        footer.appendChild(p1);
+        footer.appendChild(p2);
+        footer.appendChild(p3);
     }
 
-    footer.append(p1)
-    footer.append(p2)
-    footer.append(p3)
+    document.body.appendChild(footer);
 
 }
 
