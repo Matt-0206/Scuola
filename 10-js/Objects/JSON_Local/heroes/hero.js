@@ -121,7 +121,14 @@ function populateFooter(obj){
         footer.appendChild(p3);
     }
 
-    document.body.appendChild(footer);
+}
+
+function populateFooter(obj){
+
+    const footer = document.querySelector('footer');
+    const myFooter = document.createElement('p');
+    myFooter.textContent = obj.name;
+    footer.appendChild(myFooter);
 
 }
 
