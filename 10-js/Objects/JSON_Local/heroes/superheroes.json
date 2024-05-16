@@ -4,6 +4,9 @@
   "formed" : 2016,
   "secretBase" : "Super tower",
   "active" : true,
+  "name" : "Super Hero Squad",
+  "by" : "Matteo",
+  "update" : "14/05/2024",
 
 
   "members" : [
@@ -54,9 +57,7 @@
 
     {
 
-      "name" : "Super Hero Squad",
-      "by" : "Matteo",
-      "update" : "14/05/2024"
+
 
     }
 
