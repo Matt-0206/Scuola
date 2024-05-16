@@ -127,7 +127,7 @@ function populateFooter(obj){
 
     const footer = document.querySelector('footer');
     const myFooter = document.createElement('p');
-    myFooter.textContent = obj.name;
+    myFooter.textContent = `Squad Name: ${obj.name}  Made By: ${obj.by} Last Update: ${obj.update}`;
     footer.appendChild(myFooter);
 
 }
