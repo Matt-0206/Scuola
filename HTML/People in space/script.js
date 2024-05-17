@@ -33,12 +33,7 @@ function populateTable(obj){
 
     const people = obj.people;
 
-    for(const item of people){
-
-        const para = document.getElementById('1');
-        para.textContent = item.name;
-        
-    }
+    const myList = document.createElement('ul');
 
 }
 
