@@ -32,13 +32,138 @@ body{
 
 #myUl1, #myUl2{
 
-    border: solid 1px red;
     list-style-type: none;
 
 }
 
-.container{
+li{
 
     text-align: center;
+
+}
+
+#container{
+
+    border: solid 1px white;
+    margin: auto;
+    padding: 10px;
+
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+
+}
+
+#container table{
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 1.5em;
+
+}
+
+table, td, th {
+
+    border: solid 1px white;
+
+}
+
+h1{
+
+    font-size: 7em;
+
+}
+
+h2{
+
+    font-size: 4em;
+
+}
+
+/*----------------------------------------------------------------------*/
+
+@media screen and (max-width: 64em) {
+    
+    #container{
+
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        border: 1px solid white;
+        row-gap: 0px;
+
+    }
+
+    h1{
+
+        font-size: 3em;
+        grid-column: 1;
+        grid-row: 1;
+        padding: 0px;
+
+    }
+
+    h2{
+
+        font-size: 2em;
+        grid-column: 1;
+        grid-row: 2;
+
+    }
+
+    #container table{
+
+        font-size: 1.5em;
+        grid-column: 1/-1;
+        grid-row: 3;
+
+    }
+
+}
+
+@media screen and (max-width: 48em) {
+   
+    #container{
+
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        border: 1px solid white;
+        row-gap: 0px;
+
+    }
+
+    h1{
+
+        font-size: 2em;
+        grid-column: 1;
+        grid-row: 1;
+        padding: 0px;
+
+    }
+
+    h2{
+
+        font-size: 1.7em;
+        grid-column: 1;
+        grid-row: 2;
+
+    }
+
+    #container table{
+
+        font-size: 1.5em;
+        grid-column: 1/-1;
+        grid-row: 3;
+
+    }
+
+    
 
 }
