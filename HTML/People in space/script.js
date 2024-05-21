@@ -25,8 +25,6 @@ async function populate(){
 
 
 }
-    //const para1 = document.getElementById('1');
-    //para1.textContent = obj.name;
 
 function populatePeople(obj){
 
