@@ -29,3 +29,16 @@ body{
 }
 
 /*---------------------------------------------------------------------------------*/
+
+#myUl1, #myUl2{
+
+    border: solid 1px red;
+    list-style-type: none;
+
+}
+
+.container{
+
+    text-align: center;
+
+}

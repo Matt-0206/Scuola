@@ -21,20 +21,39 @@ async function populate(){
     
     const spacePeople = await response.json(); //
 
-    populateTable(spacePeople);
+    populatePeople(spacePeople);
+
 
 }
-
-
-function populateTable(obj){
-
     //const para1 = document.getElementById('1');
     //para1.textContent = obj.name;
 
-    const people = obj.people;
+function populatePeople(obj){
 
-    const myList = document.createElement('ul');
+    const myH2 = document.querySelector('h2');
+       
+    myH2.textContent = `There are ${obj.number} people in space right now.`;
+       
+    const members = obj.people;
+    
+    for (const member of members) {
+    
+        const myUl = document.getElementById('myUl1'); 
+        const myLi = document.createElement('li');  
+        myLi.textContent = member.name;
+        myUl.appendChild(myLi);
+    
+    }
 
-}
+    for (const member of members) {
+    
+        const myUl2 = document.getElementById('myUl2'); 
+        const myLi2 = document.createElement('li');  
+        myLi2.textContent = member.craft;
+        myUl2.appendChild(myLi2);
+    
+    }
+       
+}  
 
 populate();
