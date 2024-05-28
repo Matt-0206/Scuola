@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    let bandInfo;
+
+    // Add your code here
+
+    let band = {};
+
+    band.name = 'Blues Brothers';
+    band.genre = 'Blues';
+    band.members = ["Jake Blues", "Elwood Blues", "Steve 'The Colonel' Cropper", "Donald 'Duck' Dunn", "Murphy Dunne", "Willie 'Too Big' Hall", "Tom 'Bones' Malone", "Lou 'Blue Lou' Marini", "Matt 'Guitar' Murphy", "Alan 'Mr. Fabulous' Rubin"];
+    band.formed = '1976';
+    band.split = 'NA';
+    band.albums = {
+      "Briefcase Full of Blues": {
+        name: "Briefcase Full of Blues",
+        releaseYear: 1978
+      },
+      "The Blues Brothers: Music from the Soundtrack": {
+        name: "The Blues Brothers: Music from the Soundtrack",
+        releaseYear: 1980
+      },
+      "Made in America": {
+        name: "Made in America",
+        releaseYear: 1980
+      },
+      "Best of The Blues Brothers": {
+        name: "Best of The Blues Brothers",
+        releaseYear: 1981
+      },
+      "The Blues Brothers Band Live in Montreux": {
+        name: "The Blues Brothers Band Live in Montreux",
+        releaseYear: 1990
+      },
+      "Blues Brothers & Friends: Live from House of Blues": {
+        name: "Blues Brothers & Friends: Live from House of Blues",
+        releaseYear: 1997
+      }
+    };
+
+    bandInfo = `I ${band.name}, sono una banda musicale di genere ${band.genre}. E' stata creata nel ${band.formed} e i suoi membri sono: ${band.members}. Hanno rilasciato i seguenti album: ${band.albums}`
+
+    console.log(bandInfo);
+
+    console.log(band);
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+  </script>
+
+</html>
