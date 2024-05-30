@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Recap-00</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<script>
+
+const casablanca = {
+
+    title: 'Casablanca',
+    released: 1942,
+    director: 'Michael Curtiz'
+
+};
+
+console.log(casablanca);
+console.log(casablanca.title);
+console.log(casablanca['title']);
+
+let dictionary = {};
+
+dictionary.mouse = 'Un piccolo roditore';
+dictionary['computer mouse'] = 'periferica di input';
+
+console.log(dictionary);
+
+let cromosomi = {
+
+    koala: 16,
+    snail: 24,
+    giraffe: 30,
+    cat: 38
+
+};
+
+console.log(Object.entries(cromosomi));
+
+let physical = {
+
+    pages: 208,
+    binding: 'hardcover',
+
+
+};
+
+let contents = {
+
+    genre: 'Fiction',
+    subGenre: 'Mistery'
+
+};
+
+let book = {};
+
+Object.assign(book, contents);(book, physical, contents);
+
+console.log(book);
+
+let trilogies = [
+
+    {
+
+        title: 'Mars',
+        author: 'Philip Dick',
+        books: ['Mothern Lights', 'The Knive', 'Spyglass']
+
+    },
+
+
+    {
+
+        title: 'Venus',
+        author: 'Antony Kenner',
+        books: ['Guerre Stellari', 'Second Title', 'Third Title']
+
+    }
+
+];
+
+console.log(trilogies[1].books[0]);
+
+
+let penny = {name:"Penny", value:1, weight:2.5};
+let nickel = {name:"Nickel", value:5, weight:5};
+let dime = {name:"Dime", value:10, weight:2.268};
+let quarter = {name:"Quarter", value:25, weight:5.67};
+
+let taccuino = [quarter, quarter, dime, penny, penny, penny];
+
+console.log(taccuino[0].value);
+
+console.log(taccuino[2].value);
+
+//aggiorno il peso del penny.
+
+penny.weight = 2.49; 
+
+console.log(taccuino[3].weight);
+
+console.log(taccuino[4].weight);
+
+console.log(taccuino[5].weight);
+
+//Aggiorno il valore del quarter.
+
+quarter.value = 55;
+
+console.log(taccuino[0].value);
+
+//Aggiorno il peso del quarter passando per taccuino.
+
+taccuino[0].weight = 5;
+
+console.log(quarter.weight);
+
+console.log(taccuino[0].weight);
+
+
+//
+
+
+let nested = {
+
+	name:"Esterno",
+	content:{
+
+
+		name:"Mediano",
+		content:{
+
+
+			name:"Interno",
+			content:"Accipicchia!"			
+	}
+		}
+			};
+
+console.log(nested.content.content.content);
+console.log(nested);
+console.log(JSON.stringify(nested));
+const nestedJSON = JSON.stringify(nested,null,2);
+console.log(nestedJSON);
+
+</script>
+
+</body>
+
+
+</html>
