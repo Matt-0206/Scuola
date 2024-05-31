@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Recap_01</title>
+</head>
+
+<body>
+
+
+<script>
+
+    let ticTacToe = [
+
+        ["", "", ""],
+        ["", "", ""],
+        ["", "", ""]
+
+    ];
+
+    ticTacToe[0][2] = "X";
+    ticTacToe[1][1] = "O";
+    ticTacToe[2][2] = "X";
+    ticTacToe[2][1] = "O";
+    ticTacToe[0][0] = "X";
+    ticTacToe[0][1] = "O";
+    
+    console.log(ticTacToe);
+
+    //---------------------------------
+
+    let languages =[];
+    languages.push('Python', 'JavaScript', 'PHP');
+    languages.unshift('C', 'Fortran');
+    // languages.pop();
+    console.log(languages); 
+
+    let bestLanguage;
+    bestLanguage = languages.pop();
+
+    let message = `Il miglio linguaggio di programmazione è ${bestLanguage}`;
+    console.log(message);
+
+    let worstLanguage;
+    worstLanguage = languages.shift();
+
+    let message2 = `Il linguaggio che di programmazione che odio è ${worstLanguage}`;
+    console.log(message2);
+
+    //-----------------------------------------
+
+    let arcobaleno = [];
+    
+    arcobaleno.push('verde');
+    arcobaleno.unshift('rosso', 'arancione', 'giallo');
+    arcobaleno.push('blu', 'indaco', 'violetto');
+
+    console.log(arcobaleno);
+
+    //--------------------------------
+
+    let pesci = ['Pesce Nero', 'Siluro', 'Rosso'];
+    let mammiferi = ['Balena', 'Delfino', 'Nutria'];
+
+    let animali = pesci.concat(mammiferi);
+    console.log(animali);
+    console.log(animali.length);
+
+    let last = animali.at(-1);
+    // let last = animali[animali.length - 1];
+    console.log('L\' ultimo animale della lista è: ', last);
+
+    //-----------------------------------
+
+    let originals = ['Hope', 'Empire', 'Jedi'];
+    let prequels = ['Phantom', 'Clones', 'Sith'];
+    let sequels = ['Awakens', 'Last', 'Rise'];
+
+    let starWars = prequels.concat(originals, sequels);
+    console.log(starWars);
+    console.log('La saga di StarWars è composta da', starWars.length, 'film');  
+
+    //-----------------------------------
+
+    let sizes = ['small', 'medium', 'large'];
+    console.log(sizes.indexOf('medium'));
+    console.log(sizes.indexOf('huge'));
+
+    console.log(sizes);
+
+    //-----------------------------------
+
+    let fladOfArgentina = ['Blue', 'White', 'Blue'];
+    console.log(fladOfArgentina.indexOf('Blue'));
+
+    //------------------------------------
+
+    let beatles = ['John', 'Paul', 'George', 'Ringo'];
+    console.log(beatles.join(', '));  // trasformo in una stringa
+
+    //------------------------------------
+
+    
+
+</script>
+
+  
+
+</body>
+  
+
+</html>
