@@ -91,16 +91,24 @@ let player = new Player(1, 2);
 
 let enemy = new Enemy(3, 4);
 
-console.log("HP:",player.hp); // salute del player
+console.log("HP:", player.hp); // salute del player
 console.log("La distanza dal player è :", enemy.distanceTo(player)); // controllo la distanza dal player
 
 console.log(enemy.attack(player)); // attacco il player
-console.log("HP:",player.hp); // salute del player
+console.log("HP:", player.hp); // salute del player
 
 player.move(5, 5);
 console.log("La distanza dal player è :", enemy.distanceTo(player)); // controllo la distanza dal player
 console.log(enemy.attack(player)); // attacco il player
-console.log("HP:",player.hp); // salute del player
+
+// verifica di ereditarietà
+
+console.log(player instanceof Player); // verfico che player sia un istanza di Player (Vero)
+console.log(player instanceof Actor); // verfico che player sia un istanza di Actor (Vero)
+
+console.log(player instanceof Enemy); // verifico che player sia un istanza di Enemy 
+
+console.log(enemy instanceof Player); // verifico che enemy sia un istanza di Player 
 
 </script>
 
