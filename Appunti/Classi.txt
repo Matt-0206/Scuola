@@ -1,0 +1,5 @@
+Una classe è un template per creare oggetti standardizzati (condividono, quindi, delle caratteristiche)
+
+una classe è formata da due cose:
+- proprietà di un oggetto
+- funzioni di ogni oggetto
