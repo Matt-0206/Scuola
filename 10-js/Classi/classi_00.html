@@ -14,16 +14,16 @@
 
 <script>
 
-class Player{   //il nome della classe va con la lettera maiuscola
+class Player{   // il nome della classe va con la lettera maiuscola
 
-    constructor(startX, startY){ //creiamo il primo Metodo, "constructor" è un metodo che inizializza subito ogni oggetto della classe
+    constructor(startX, startY){ // creiamo il primo Metodo, "constructor" è un metodo che inizializza subito ogni oggetto della classe
 
         this.x = startX;
         this.y = startY;
 
     }
 
-    move(dx, dy){   //creaiamo il secondo Metodo
+    move(dx, dy){   // creaiamo il secondo Metodo, "move" viene utilizzato per "muovere" il player
 
         this.x += dx;
         this.y += dy;
@@ -35,9 +35,30 @@ class Player{   //il nome della classe va con la lettera maiuscola
 // creiamo le istanze della classe
 
 let player1 = new Player(0, 0);
+console.log("La posizione X di player 1 è: ", player1.x); // valore x di player1
+console.log("La posizione Y di player 1 è: ", player1.y); // valore y di player1
 
-console.log(player1.x);
+player1.move(3, 4); // modifichiamo i valori di player1
+console.log("La posizione X di player 1 è: ", player1.x); // nuovo valore x di player1
+console.log("La posizione Y di player 1 è: ", player1.y); // nuovo valore y di player1
 
+player1.move(2, 2); // modifichiamo i valori di player1
+console.log("La posizione X di player 1 è: ", player1.x); // nuovo valore x di player1, il risultato sarà 5, questo perché il valore impostato viene sommato a quello precedente
+console.log("La posizione Y di player 1 è: ", player1.y); // nuovo valore y di player1, il risultato sarà 6, questo perché il valore impostato viene sommato a quello preceden
+
+// creaiamo un altra istanza
+
+let player2 = new Player(0, 0);
+console.log("La posizione X di player 2 è: ", player2.x);
+console.log("La posizione Y di player 2 è: ", player2.y);
+
+player2.move(5, 8);
+console.log("La posizione X di player 2 è: ", player2.x);
+console.log("La posizione Y di player 2 è: ", player2.y);
+
+player2.move(7, 5);
+console.log("La posizione X di player 2 è: ", player2.x);
+console.log("La posizione Y di player 2 è: ", player2.y);
 
 </script>
 
