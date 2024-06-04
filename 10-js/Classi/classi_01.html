@@ -16,7 +16,91 @@
 
 // ereditarietà (inheritance)
 
+/* creiamo una superclass di nome Actor, in seguito creaiamo due sottoclassi:
+    - Player
+    - Enemy 
+    
+Player non può uccidere nessuno, Enemy invece può uccidere qualcuno.
+Player ed Enemy erediteranno delle caratteristiche da Actor (ereditano un comportamento generale dalla superclass)*/
 
+class Actor{
+
+    constructor(startX, startY){
+
+        this.x = startX;
+        this.y = startY;
+
+    }
+
+    move(dx, dy){
+
+        this.x += dx;
+        this.y += dy;
+
+    }
+
+    // se il player è troppo vicino al nemico, devo calolare la distanza tra i due punti
+
+    distanceTo(otherActor){ // Metodo per calcolare la distanza tra il player e il nemico
+
+        let dx = otherActor.x - this.x; // calcolo la distanza orrizontale
+        let dy = otherActor.y - this.y; // calcolo la distanza verticale
+
+        return Math.hypot(dx, dy); // uso la funziona "Math.hypot" per calcolare la distanza tra i due punti (ipotenusa);
+
+    }
+
+}
+
+// creiamo la subclass Player
+
+class Player extends Actor { // creiamo la subclass Player, essere eredita alcune delle funzioni di Actor
+
+    constructor(startX, startY){
+
+        super(startX, startY); // la keyword "super" indica il constructor della classe Actor
+        this.hp = 100; // salute di Player
+    
+
+    }
+
+}
+
+class Enemy extends Actor { // creiamo la subclass Enemy, anche questa eredita delle funzioni di Actor
+
+    attack(player){
+
+        if (this.distanceTo(player) < 4){ // se la distanza da Player è minore di 4
+
+            player.hp -= 10; // rimuovi 10 hp alla salute di Player
+            return true; // ritorna un valore vero
+
+        }else{
+
+            return false; // ritorna un valore falso
+
+        }
+
+    }
+
+}
+
+// creiamo le istanze
+
+let player = new Player(1, 2);
+
+let enemy = new Enemy(3, 4);
+
+console.log("HP:",player.hp); // salute del player
+console.log("La distanza dal player è :", enemy.distanceTo(player)); // controllo la distanza dal player
+
+console.log(enemy.attack(player)); // attacco il player
+console.log("HP:",player.hp); // salute del player
+
+player.move(5, 5);
+console.log("La distanza dal player è :", enemy.distanceTo(player)); // controllo la distanza dal player
+console.log(enemy.attack(player)); // attacco il player
+console.log("HP:",player.hp); // salute del player
 
 </script>
 
