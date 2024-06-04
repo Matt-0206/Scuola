@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+        <title>
+            Classi_00
+        </title>
+
+</head>
+
+<body>
+
+<script>
+
+class Player{   //il nome della classe va con la lettera maiuscola
+
+    constructor(startX, startY){ //creiamo il primo Metodo, "constructor" è un metodo che inizializza subito ogni oggetto della classe
+
+        this.x = startX;
+        this.y = startY;
+
+    }
+
+    move(dx, dy){   //creaiamo il secondo Metodo
+
+        this.x += dx;
+        this.y += dy;
+
+    }
+
+}
+
+// creiamo le istanze della classe
+
+let player1 = new Player(0, 0);
+
+console.log(player1.x);
+
+
+</script>
+
+</body>
+
+</html>
