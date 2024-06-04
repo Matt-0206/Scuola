@@ -1,5 +1,13 @@
 Una classe è un template per creare oggetti standardizzati (condividono, quindi, delle caratteristiche)
 
-una classe è formata da due cose:
+Una classe è formata da due cose:
 - proprietà di un oggetto
 - funzioni di ogni oggetto
+
+
+Ad esempio:
+In un gioco, la classe player, può avere PROPRIETÀ come il nome del player, la salute del player, la posizione del player ecc... la classe può avere dei METODI (funzioni), come muoversi, sparare, raccogliere oggetti. Questi oggetti si chiamano ISTANZE
+
+All'interno di una classe si trovano FUNZIONI chiamate METODI, mentre gli oggetti creati nelle classi si chiamano ISTANZE, ovvero una rappresentazione della classe.
+
+L'ereditarietà è la definizione di classi genitore (SuperClass) e classi figli (SubClass)
