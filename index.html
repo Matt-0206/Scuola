@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+
+    <title>
+            
+    </title>
+
+
+    
+</head>
+
+<body>
+
+<script>
+
+// Compound Data Type: Array e Oggetti
+
+let cat = {
+
+    name: 'Mario',
+    age: 11,
+    razza: 'Persiano'
+
+};
+
+console.log(cat.razza);
+
+let Matrix = {
+    
+    title: 'Matrix',
+    regista: 'Lana Wachowski',
+    attore: 'Keanu Reeves',
+    anno: '1990',
+    fantascienza : true
+
+};
+
+console.log(Matrix.fantascienza);
+console.log(Matrix['fantascienza']);
+
+
+let superEroi = [ 'Superman', 'Angeli', 'IronMan', 'Lanterna Verde', 'ElasticMan' ];
+
+let msg = `Il super eroe più forte è: ${superEroi[superEroi.length - 1]}`
+
+console.log(msg);
+
+let dizionario = {};
+
+dizionario.parola = 'Qifsha Ropt';
+console.log(dizionario)
+
+let cars = {
+
+    brand1 : 'Audi',
+    brand2 : 'BMW',
+    brand3 : 'Mercedes',
+    brand4 : 'Ferrari',
+    brand5 : 'Koenigsegg'
+
+};
+
+console.log(cars["brand5"]);
+
+let attrici = [ 'Carluccio Mario', 'Jennifer Lopez', 'Chiara Ferragni', 'Donatini Daniel'];
+
+console.log(`Io ho ${attrici.length} attrici preferite`);
+
+if( attrici.includes('Chiara Ferragni') ){
+
+    console.log('Purtroppo c\'è anche Chiara Ferragni');
+
+}
+
+let mostri = {
+
+    vampiro : 'Dracula',
+    fantasma : 'Kasper',
+    licantropo : 'Bob'
+
+};
+
+console.log(Object.keys(mostri));
+
+let gatti = {
+
+    gatto1 : 'Felix',
+    gatto2 : 'Rex',
+    gatto3 : 'Mimi'
+
+};
+
+console.log(Object.values(gatti));
+
+let fumetti = ['Topolino', 'Paperino', 'Pippo', 'Pluto'];
+
+fumetti.unshift('Minnie');
+
+console.log(fumetti);
+
+</script>
+
+</body>
+
+</html>
