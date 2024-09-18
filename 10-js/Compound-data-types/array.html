@@ -59,14 +59,33 @@
 
             console.log(languages);
 
-            languages.push("python");
+            languages.push("Python");
 
             console.log(languages);
 
-            languages.unshift("fortran");
+            languages.push("Javascript");
+
+            languages.push("Rust");
+
+            languages.unshift("Fortran");
 
             console.log(languages);
 
+            //languages.pop();
+
+            let bestLanguages = languages.pop();
+
+            let message = `Il mio linguaggio preferito è ${bestLanguages}`;
+
+            console.log(message);
+
+            // languages.shift();
+
+            // console.log(languages);
+
+            let worstLanguage = `Il linguaggio che odio di più è ${languages.shift()}`;
+
+            console.log(worstLanguage);
 
         </script>
 
