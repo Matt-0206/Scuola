@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Objects</title>
+r
+  </head>
+
+
+
+  <body>
+  </body>
+
+  <script>
+
+        /* Sia array che oggetti sono compund data types (elementi composti), gli array contengono elementi dello stesso tipo. Gli oggetti, invece, contengono diversi tipi di dati.
+         Un array ha un indice (index) generico, mentre gli oggetti contengono chiavi (key). */
+
+        let jurassicPark = {
+
+        "titolo" : "Jurassic Park",
+        "data di uscita" : 1993,
+        "regista" : "Stephen Spilberg"
+        };
+
+        console.log(jurassicPark);
+
+        //I due modi per far stampare in console uno solo dei dati.
+        console.log(jurassicPark.titolo);
+        console.log(jurassicPark["data di uscita"]);
+
+
+        //Modo per inserire all'interno di un oggetto vuoto degli elementi.
+        let dizionario = {};
+
+        dizionario.gatto = "un felino puccioso.",
+        dizionario.canarino = "un volatile";
+        dizionario.sardina = "anfibio";
+        dizionario["volatile aggressivo"] = "cardellino";
+
+        console.log(dizionario);
+
+        //Mostra solo le keys dell'oggetto.
+        console.log(Object.keys(dizionario));
+        //Mostra keys e value
+        console.log(Object.entries(dizionario));
+
+        //Combinare oggetti
+        let datiLibro = {pagine: 200, copertina: "rigida"};
+
+        let contenutoLibro = {genere: "Thriller", sottogenere: "Mystery"};
+
+        let libro = {};
+
+        Object.assign(libro, datiLibro, contenutoLibro);
+
+        console.log(libro);
+
+  </script>
+
+</html>
