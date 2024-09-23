@@ -1,0 +1,17 @@
+
+
+crea un tuo oggetto letterale per rappresentare una delle tue band preferite. Le proprietà richieste sono:
+
+    name: Stringa che rappresenta il nome della band.
+    nationality: Stringa che rappresenta il paese di provenienza della band.
+    genre: Genere musicale suonato dalla band.
+    members: Numero che rappresenta il numero di membri della band.
+    formed: Numero che rappresenta l'anno di formazione della band.
+    split: Numero che rappresenta l'anno di scioglimento della band, oppure "false" se è ancora attiva.
+    albums: Array contenente gli album pubblicati dalla band. Ogni elemento dell'array dovrebbe essere un oggetto con le seguenti proprietà:
+        name: Stringa che rappresenta il titolo dell'album.
+        released: Numero che rappresenta l'anno di pubblicazione dell'album.
+
+Includi almeno due album nell'array "albums".
+
+Una volta fatto questo, dovresti creare una stringa nella variabile "bandInfo" contenente una breve biografia che descriva il nome, la nazionalità, gli anni di attività, lo stile musicale e il titolo e la data di uscita del loro primo album.    

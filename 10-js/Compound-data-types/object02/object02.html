@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    
+
+    // Add your code here
+
+    let band = {
+
+    name: "The Beatles",
+    nationality: "Inglese",
+    genre: "Rock",
+    members: 4,
+    formed: 1960,
+    split: 1970,
+    albums: [{
+
+        name: "Abbey Road",
+        released: 1969
+
+      }, 
+
+      {
+
+        name: "Let it Be",
+        released: 1970
+
+      }]
+
+    };
+
+    let bandInfo = `I "${band.name}", con nazionalità ${band.nationality}, sono un gruppo ${band. genre}. E' composta da ${band.members} membri ed è nata nel ${band.formed} per poi dividersi nel ${band.split}. Due album famosi sono: ${band.albums[0].name} rilasciato nel ${band.albums[0].released} ed ${band.albums[1].name} rilasciato nel ${band.albums[1].released}`;
+
+    console.log(bandInfo);
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+  </script>
+
+</html>

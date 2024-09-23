@@ -15,8 +15,8 @@
 
         let ricetta = {
 
-          "titolo" : "Polenta",
-          "provenienza" : "Friuli"
+          titolo : "Polenta",
+          provenienza : "Friuli"
 
         };
 
@@ -24,10 +24,10 @@
 
         let ingredienti = {
 
-          "ingrediente1" : "Farina di Mais",
-          "ingrediente2" : "Olio d'Oliva",
-          "ingrediente3" : "Acqua",
-          "ingrediente4" : "Sale grosso"
+          ingrediente1 : "Farina di Mais",
+          ingrediente2 : "Olio d'Oliva",
+          ingrediente3 : "Acqua",
+          ingrediente4 : "Sale grosso"
 
         };
 
@@ -36,6 +36,88 @@
         let ricettaPolenta = Object.assign(ricetta, ingredienti); //Unisco i due oggetti
 
         console.log(ricettaPolenta);
+
+//----------------------------------------------------------------------------------------
+
+        // più oggetti all'interno di un array
+
+        let trilogies = [
+
+          {
+
+            title : "Serie di Kingsbridge",
+            autore : "Ken Follet",
+            libri : ["Pilastri della terra", "Mondo senza fine", "La Colonna di Fuoco"]
+
+          },
+
+          {
+
+            title: "Serie La Torre Nera",
+            autore: "Stephen King",
+            libri: ["L'ultimo cavaliere", "La chiamate dei tre", "Terre Desolate"]
+            
+          }
+
+        ];
+
+        console.log(trilogies[1].libri[0]);
+      
+//----------------------------------------------------------------------------------------
+
+          let batman = {
+
+            nome: "Batman", forza: 9, "arma segreta" : "batmobile"
+
+          };
+
+          let deadpool = {
+
+            nome : "Deadpool", forza: 5, "arma segreta" : "rigenerazione"
+
+          };
+
+          let wolverine = {
+
+            nome : "Wolverine", forza: 8, "arma segreta" : "artigli"
+
+          };
+
+          let ironman = {
+
+            nome : "IronMan", forza: 4, "arma segreta" : "armatura"
+
+          };
+
+
+          let teamSupereroi= [batman, deadpool, wolverine, ironman]
+      
+          console.log(teamSupereroi[0].nome);
+
+          console.log(teamSupereroi[0]["arma segreta"]);
+
+          console.log(teamSupereroi[2]["arma segreta"]);
+
+//----------------------------------------------------------------------------------------
+
+          let nested = {
+
+            name: "Esterno",
+            content:{
+              name: "Mediano",
+              
+              content:{
+
+              name : "Interno",
+              content: "Accipicchia!"
+
+              }
+
+            }
+
+          };
+
+          console.log(nested.content.content.name);
 
   </script>
 
