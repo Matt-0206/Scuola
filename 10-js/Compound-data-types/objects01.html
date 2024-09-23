@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Objects</title>
+
+  </head>
+
+
+
+  <body>
+  </body>
+
+  <script>
+
+        let ricetta = {
+
+          "titolo" : "Polenta",
+          "provenienza" : "Friuli"
+
+        };
+
+        console.log(ricetta);
+
+        let ingredienti = {
+
+          "ingrediente1" : "Farina di Mais",
+          "ingrediente2" : "Olio d'Oliva",
+          "ingrediente3" : "Acqua",
+          "ingrediente4" : "Sale grosso"
+
+        };
+
+        console.log(ingredienti);
+
+        let ricettaPolenta = Object.assign(ricetta, ingredienti); //Unisco i due oggetti
+
+        console.log(ricettaPolenta);
+
+  </script>
+
+</html>
