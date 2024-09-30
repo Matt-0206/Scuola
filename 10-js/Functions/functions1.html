@@ -44,6 +44,45 @@
     }
 
     console.log(addArrow(2, 3))
+
+//-----------------------------------------------------------------------------------------------
+
+    // Arrow Function
+
+    let quadratoArrow = x => {
+
+        return x * x;
+
+    };
+    
+
+    console.log(quadratoArrow(9));
+    
+//-----------------------------------------------------------------------------------------------
+
+    function dataCorrente(){
+    
+        let data = new Date();
+
+        return data.toLocaleString();
+        
+    }
+
+    console.log(dataCorrente());
+
+//-----------------------------------------------------------------------------------------------
+
+    // Rest Parameters
+
+    let myColors = (name, ...favoriteColors) => {
+
+        let colorString = favoriteColors.join(", ");
+    
+        console.log(`Mi chiamo ${name} e i miei colori preferiti sono ${colorString}.`);
+    }
+
+    myColors("Gioele", "Giallo, Rosso, Verde");
+
 </script>
 </body>
 

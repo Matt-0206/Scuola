@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+
+<head>
+
+<meta charset="utf-8">
+<title>una pagina web</title>
+
+
+</head>
+
+<body>
+
+
+<script>
+
+//rest parameters
+
+    function sum(...numbers){
+
+        let total = 0;
+
+        for(number of numbers){
+
+            total += number;
+
+        }
+
+        return total;
+
+    }
+
+    console.log(sum(1,2,3));
+
+//------------------------------------------------------
+
+    let shoppingList = [ "Milk", "Sugar", "Bananas", "Ice Cream" ];
+
+    console.log(shoppingList.find(item => item.length > 6));  //trovo l'elemento con più di 6 caratteri, si ferma alla prima istanza che trova
+
+    let shoppingList2 = [ "Milk", "Sugar", "Bananas", "Ice Cream" ];
+
+    console.log(shoppingList2.filter(item => item.length > 6));  //filtra l'elemento con più di 6 caratteri
+
+    let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    let cubes = numbers.map(x => x * x * x); //x
+
+    console.log(cubes)
+
+</script>
+</body>
+
+</html>

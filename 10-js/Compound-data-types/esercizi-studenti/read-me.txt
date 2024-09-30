@@ -1,0 +1,44 @@
+////////////// 1
+
+In questa attività ti viene fornito un oggetto letterale e i tuoi compiti sono:
+
+    Immagazzinare il valore della proprietà "name" all'interno della variabile "catName", utilizzando bracket notation.
+    
+    Eseguire il metodo "greeting()" utilizzando la notazione a punto (verrà registrato il saluto nella console del browser).
+    
+    Aggiornare il valore della proprietà "color" a "nero".
+    
+    
+////////////// 2
+
+
+Nel prossimo compito, ti sfidiamo a creare un tuo oggetto letterale per rappresentare una delle tue band preferite. Le proprietà richieste sono:
+
+    name: Stringa che rappresenta il nome della band.
+    nationality: Stringa che rappresenta il paese di provenienza della band.
+    genre: Genere musicale suonato dalla band.
+    members: Numero che rappresenta il numero di membri della band.
+    formed: Numero che rappresenta l'anno di formazione della band.
+    split: Numero che rappresenta l'anno di scioglimento della band, oppure "false" se è ancora attiva.
+    albums: Array contenente gli album pubblicati dalla band. Ogni elemento dell'array dovrebbe essere un oggetto con le seguenti proprietà:
+        name: Stringa che rappresenta il titolo dell'album.
+        released: Numero che rappresenta l'anno di pubblicazione dell'album.
+
+Includi almeno due album nell'array "albums".
+
+Una volta fatto questo, dovresti creare una stringa nella variabile "bandInfo" contenente una breve biografia che descriva il nome, la nazionalità, gli anni di attività, lo stile musicale e il titolo e la data di uscita del loro primo album.    
+
+
+
+////////////// 3
+
+
+In questa attività, vogliamo tornare all'oggetto letterale "gatto" dell'Esercizio 1. Vogliamo riscrivere il metodo "greeting()" in modo che stampi sulla console del browser "Ciao, ha detto [Nome del gatto] il [Razza del gatto]." (dove "[Nome del gatto]" e "[Razza del gatto]" saranno sostituiti con i valori effettivi).
+
+Questo metodo dovrà funzionare per qualsiasi oggetto gatto con la stessa struttura, indipendentemente dal nome o dalla razza.
+
+Una volta terminato, crea un altro oggetto chiamato "gatto2" con la stessa struttura e lo stesso metodo "greeting()", ma con nome, razza e colore differenti.
+
+Chiama entrambi i metodi "greeting()" per verificare che stampino i saluti appropriati sulla console.
+
+
