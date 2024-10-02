@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Classi_Step</title>
+
+  </head>
+
+
+
+  <body>
+  </body>
+
+  <script>
+
+        class Player{   //Il nome della classe ha sempre la lettera maiuscola
+
+            constructor(startX, startY){
+
+                this.x = startX;
+                this.y = startY;
+
+
+            }
+
+            move(dx, dy){
+
+                this.x = dx;
+                this.y = dy;
+
+            }
+
+            distanceTo(otherActor){
+
+              let dx = otherActor.x - this.x;
+              let dy = otherActor.y - this.y;
+
+              return Math.hypot (dx, dy); // calcolo dell'ipotenusa
+
+            }
+        }
+
+  </script>
+
+</html>
