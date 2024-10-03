@@ -1,0 +1,11 @@
+Cosa è una classe?
+
+Una classe è un "template" per creare oggetti standardizzati.
+
+Cos'è un oggetto?
+
+Gli oggetti sono elementi composti che contengono diversi tipi di dati.
+
+Definisci il concetto di 'ereditarietà' proprio delle classi?
+
+Creando una classe posso ereditare le "funzioni" della classe.

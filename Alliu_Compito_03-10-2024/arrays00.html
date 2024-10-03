@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+   
+  </head>
+  <body>
+
+   
+
+    <script>
+
+      const names = ['lauRa', 'giNEvra', 'gloriA', 'giUdiTta'];
+
+      // Crea un nuovo array
+      const updatedNames = [];
+
+
+        for (name of names){
+
+         // inserisci qui il tuo codice
+
+          const updated = name.charAt(0).toUpperCase()+name.slice(1).toLowerCase();
+          
+          updatedNames.push(updated);
+
+        }
+
+      console.log(updatedNames);
+
+
+    </script>
+  </body>
+</html>
